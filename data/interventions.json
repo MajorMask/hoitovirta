@@ -1,0 +1,7 @@
+[
+  {"id": "coordinator", "name": "Name a coordinator for every suspected cancer", "owner": "Wellbeing county, specialist care", "effects": {"specialist": "sim_coordinator"}},
+  {"id": "fasttrack", "name": "Fast-track with standard referral criteria", "owner": "Chief physician (FICAN pilots)", "effects": {"primary": "sim_fasttrack_primary", "specialist": "sim_fasttrack_specialist"}},
+  {"id": "direct_imaging", "name": "GP direct access to imaging for red flags", "owner": "Imaging + primary care", "effects": {"primary": "sim_imaging"}},
+  {"id": "triage_sop", "name": "Red-flag triage SOP + safety-net re-contact", "owner": "Primary-care director", "effects": {"primary": "sim_triage"}},
+  {"id": "awareness", "name": "'When to call' information in the patient's language", "owner": "County communications", "effects": {"patient": "sim_awareness"}}
+]

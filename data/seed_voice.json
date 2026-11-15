@@ -1,0 +1,11 @@
+{
+  "notice": "Synthetic staff identities for the demo only. These credentials are not real.",
+  "staff": [
+    {"id": "L-1042", "pin": "4821", "name": "Laura Niemi", "role": "coordinator"},
+    {"id": "T-2210", "pin": "7305", "name": "Mikko Rantala", "role": "triage_nurse"},
+    {"id": "O-3307", "pin": "1159", "name": "Dr. Aino Salo", "role": "oncologist"},
+    {"id": "S-4120", "pin": "9042", "name": "Dr. Jari Koski", "role": "surgeon"},
+    {"id": "A-5001", "pin": "2678", "name": "Sanna Virtanen", "role": "admin"},
+    {"id": "C-6001", "pin": "3391", "name": "Petri Laine", "role": "county_manager"}
+  ]
+}

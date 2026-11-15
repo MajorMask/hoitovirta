@@ -1,0 +1,222 @@
+{
+  "stages": {
+    "before_contact": {
+      "source_name": "Syöpäjärjestöt / Kaikki syövästä — Moni välttelee lääkäriin menoa mahdollisten syöpäoireiden vuoksi",
+      "source_url": "https://www.syopajarjestot.fi/uutinen/moni-valttelee-laakariin-menoa-mahdollisten-syopaoireiden-vuoksi/",
+      "review_status": "example text, not clinically reviewed",
+      "en": {
+        "what_is_happening": "You have noticed a change or symptom. A symptom alone does not tell what is causing it.",
+        "today_you_can": "Write down what changed, when it began, and what you want help with. Contact your local health service if you are concerned or the symptom continues.",
+        "ask_these": ["Where should I contact?", "What should I do if the symptom changes while I wait?"],
+        "who_to_call": "Your local health service. Once assigned, your coordinator is shown in My path.",
+        "myths": [
+          {"myth": "One symptom means I have cancer.", "fact": "Many symptoms can have different causes; an assessment is needed to understand yours."},
+          {"myth": "I should not contact care unless I am certain it is serious.", "fact": "You can describe a concern and let a health professional assess what should happen next."},
+          {"myth": "There is one test for every symptom.", "fact": "The next step depends on the symptom and the clinician's assessment."}
+        ]
+      },
+      "fi": {
+        "what_is_happening": "Olet huomannut muutoksen tai oireen. Pelkkä oire ei kerro, mistä se johtuu.",
+        "today_you_can": "Kirjaa, mikä muuttui, milloin se alkoi ja mihin tarvitset apua. Ota yhteyttä terveyspalveluun, jos olet huolissasi tai oire jatkuu.",
+        "ask_these": ["Mihin minun kannattaa ottaa yhteyttä?", "Mitä teen, jos oire muuttuu odottaessani?"],
+        "who_to_call": "Oma terveyspalvelusi. Kun koordinaattori nimetään, näet hänet Minun polkuni -näkymässä.",
+        "myths": [
+          {"myth": "Yksi oire tarkoittaa, että minulla on syöpä.", "fact": "Monella oireella voi olla eri syitä. Oireen arviointi auttaa selvittämään tilannetta."},
+          {"myth": "En saa ottaa yhteyttä hoitoon, ellen ole varma oireen vakavuudesta.", "fact": "Voit kertoa huolestasi ja pyytää terveydenhuollon ammattilaista arvioimaan seuraavan vaiheen."},
+          {"myth": "Jokaiseen oireeseen tehdään sama tutkimus.", "fact": "Seuraava vaihe riippuu oireesta ja ammattilaisen arviosta."}
+        ]
+      }
+    },
+    "first_contact": {
+      "source_name": "Syöpäjärjestöt / Kaikki syövästä — Moni välttelee lääkäriin menoa mahdollisten syöpäoireiden vuoksi",
+      "source_url": "https://www.syopajarjestot.fi/uutinen/moni-valttelee-laakariin-menoa-mahdollisten-syopaoireiden-vuoksi/",
+      "review_status": "example text, not clinically reviewed",
+      "en": {
+        "what_is_happening": "A health professional is hearing what you have noticed and deciding whether more assessment is needed.",
+        "today_you_can": "Tell them when the symptom began, how it has changed, and what is worrying you. Ask for an interpreter if you need one.",
+        "ask_these": ["What happens next?", "Who should I contact if I have not heard back?"],
+        "who_to_call": "The service you contacted. Your coordinator appears in My path when assigned.",
+        "myths": [
+          {"myth": "The first visit always includes every test.", "fact": "A clinician first assesses the situation; the next steps depend on that assessment."},
+          {"myth": "A symptom alone confirms a diagnosis.", "fact": "A diagnosis requires appropriate clinical assessment and, when needed, investigations."},
+          {"myth": "I should leave out a symptom if it feels embarrassing.", "fact": "Sharing what you have noticed helps the professional assess what to do next."}
+        ]
+      },
+      "fi": {
+        "what_is_happening": "Terveydenhuollon ammattilainen kuulee, mitä olet huomannut, ja arvioi lisäselvitysten tarpeen.",
+        "today_you_can": "Kerro, milloin oire alkoi, miten se on muuttunut ja mikä huolestuttaa. Pyydä tulkkia, jos tarvitset sitä.",
+        "ask_these": ["Mitä tapahtuu seuraavaksi?", "Kehen otan yhteyttä, jos en kuule teistä?"],
+        "who_to_call": "Palvelu, johon otit yhteyttä. Koordinaattori näkyy Minun polkuni -näkymässä, kun hänet on nimetty.",
+        "myths": [
+          {"myth": "Ensimmäisellä käynnillä tehdään aina kaikki tutkimukset.", "fact": "Ammattilainen arvioi tilanteen ensin. Jatko riippuu arviosta."},
+          {"myth": "Pelkkä oire varmistaa diagnoosin.", "fact": "Diagnoosi edellyttää ammattilaisen arviota ja tarvittaessa tutkimuksia."},
+          {"myth": "Nolosta oireesta kannattaa vaieta.", "fact": "Kertomasi auttaa ammattilaista arvioimaan, mitä seuraavaksi tarvitaan."}
+        ]
+      }
+    },
+    "suspicion": {
+      "source_name": "Syöpäjärjestöt / Kaikki syövästä — Syövän toteaminen ja tutkimukset",
+      "source_url": "https://kaikkisyovasta.fi/tietoa-syovasta/mika-on-syopa/syovan-toteaminen-ja-tutkimukset/",
+      "review_status": "example text, not clinically reviewed",
+      "en": {
+        "what_is_happening": "A clinician has recorded a concern and may arrange further tests. A suspicion is not a confirmed diagnosis.",
+        "today_you_can": "Check the next step and date in My path. Ask your coordinator to explain any unfamiliar words.",
+        "ask_these": ["What is this test meant to find out?", "When and how will I hear about the result?"],
+        "who_to_call": "Your named coordinator in My path or the care letter.",
+        "myths": [
+          {"myth": "A referral means I have cancer.", "fact": "A referral arranges assessment; investigation is needed to establish what is happening."},
+          {"myth": "A scan by itself always confirms cancer.", "fact": "Different investigations provide different information; a tissue or cell sample may be needed to confirm a diagnosis."},
+          {"myth": "The same tests are used for every person.", "fact": "Investigations depend on the symptom, body area and clinical assessment."}
+        ]
+      },
+      "fi": {
+        "what_is_happening": "Ammattilainen on kirjannut huolen ja voi järjestää lisätutkimuksia. Epäily ei ole varmistettu diagnoosi.",
+        "today_you_can": "Tarkista seuraava vaihe ja aika Minun polkuni -näkymästä. Pyydä koordinaattoria selittämään vieraat sanat.",
+        "ask_these": ["Mitä tällä tutkimuksella selvitetään?", "Milloin ja miten saan tuloksen?"],
+        "who_to_call": "Minun polkuni -näkymässä tai hoitokirjeessä nimetty koordinaattori.",
+        "myths": [
+          {"myth": "Lähete tarkoittaa, että minulla on syöpä.", "fact": "Lähete järjestää tilanteen selvittämistä. Syyn varmistaminen vaatii tutkimuksia."},
+          {"myth": "Kuvaus yksin varmistaa aina syövän.", "fact": "Eri tutkimukset antavat erilaista tietoa. Diagnoosin varmistamiseen voidaan tarvita solu- tai kudosnäyte."},
+          {"myth": "Kaikille tehdään samat tutkimukset.", "fact": "Tutkimukset valitaan oireen, kehon alueen ja ammattilaisen arvion perusteella."}
+        ]
+      }
+    },
+    "referral_tests": {
+      "source_name": "Syöpäjärjestöt / Kaikki syövästä — Syövän toteaminen ja tutkimukset",
+      "source_url": "https://kaikkisyovasta.fi/tietoa-syovasta/mika-on-syopa/syovan-toteaminen-ja-tutkimukset/",
+      "review_status": "example text, not clinically reviewed",
+      "en": {
+        "what_is_happening": "Tests are being used to learn more about a finding. The tests depend on your situation.",
+        "today_you_can": "Read the appointment instructions and ask the clinic if you are unsure how to prepare or where to go.",
+        "ask_these": ["How should I prepare?", "Who can explain the result and what happens after the test?"],
+        "who_to_call": "The clinic named in your appointment letter, or your coordinator in My path.",
+        "myths": [
+          {"myth": "More tests mean the result is already known.", "fact": "Tests gather information; the care team interprets the results."},
+          {"myth": "Every test needs the same preparation.", "fact": "Preparation depends on the specific test; follow the instructions you received."},
+          {"myth": "One test is always enough.", "fact": "The professional may combine investigations to get the information needed."}
+        ]
+      },
+      "fi": {
+        "what_is_happening": "Tutkimuksilla selvitetään löydöstä tarkemmin. Tutkimukset riippuvat tilanteestasi.",
+        "today_you_can": "Lue ajanvarauksen ohjeet. Kysy poliklinikalta, jos valmistautuminen tai saapumispaikka on epäselvä.",
+        "ask_these": ["Miten minun pitää valmistautua?", "Kuka selittää tuloksen ja seuraavan vaiheen?"],
+        "who_to_call": "Ajanvarauskirjeessä mainittu poliklinikka tai Minun polkuni -näkymässä nimetty koordinaattori.",
+        "myths": [
+          {"myth": "Lisätutkimukset tarkoittavat, että tulos tiedetään jo.", "fact": "Tutkimuksilla kerätään tietoa, jonka hoitotiimi arvioi."},
+          {"myth": "Kaikkiin tutkimuksiin valmistaudutaan samalla tavalla.", "fact": "Valmistautuminen riippuu tutkimuksesta. Noudata saamaasi ohjetta."},
+          {"myth": "Yksi tutkimus riittää aina.", "fact": "Ammattilainen voi yhdistää tutkimuksia tarvittavan tiedon saamiseksi."}
+        ]
+      }
+    },
+    "waiting_result": {
+      "source_name": "Syöpäjärjestöt / Kaikki syövästä — Syövän toteaminen ja tutkimukset",
+      "source_url": "https://kaikkisyovasta.fi/tietoa-syovasta/mika-on-syopa/syovan-toteaminen-ja-tutkimukset/",
+      "review_status": "example text, not clinically reviewed",
+      "en": {
+        "what_is_happening": "Your test information is being reviewed. This guide cannot tell what your result will be.",
+        "today_you_can": "Check who is expected to contact you and how. If the date you were given has passed, use My date slipped in My path.",
+        "ask_these": ["Who will contact me with the result?", "What should I do if I have not heard by the date given?"],
+        "who_to_call": "Your coordinator or the clinic that arranged the test.",
+        "myths": [
+          {"myth": "Waiting tells me what the result will be.", "fact": "Only the care team can explain your result after reviewing the investigation."},
+          {"myth": "A result is always explained in the same way or at the same time.", "fact": "Ask the clinic how and when your result will be shared."},
+          {"myth": "I must wait silently if the expected date has passed.", "fact": "You can contact the clinic or coordinator to ask what happens next."}
+        ]
+      },
+      "fi": {
+        "what_is_happening": "Tutkimustulostasi arvioidaan. Tämä opas ei voi kertoa, millainen tuloksesi on.",
+        "today_you_can": "Tarkista, kenen on tarkoitus ottaa yhteyttä ja miten. Jos ilmoitettu päivä on mennyt, käytä Minun polkuni -näkymän Aikani siirtyi -toimintoa.",
+        "ask_these": ["Kuka ottaa yhteyttä tuloksesta?", "Mitä teen, jos en kuule sovittuun päivään mennessä?"],
+        "who_to_call": "Koordinaattorisi tai tutkimuksen järjestänyt poliklinikka.",
+        "myths": [
+          {"myth": "Odotusaika kertoo, millainen tulos on.", "fact": "Vain hoitotiimi voi selittää tuloksen tutkimuksen arvioinnin jälkeen."},
+          {"myth": "Tulos kerrotaan aina samalla tavalla ja samassa ajassa.", "fact": "Kysy poliklinikalta, miten ja milloin saat tuloksen."},
+          {"myth": "Minun pitää vain odottaa, vaikka sovittu päivä meni.", "fact": "Voit kysyä poliklinikalta tai koordinaattorilta, mitä seuraavaksi tapahtuu."}
+        ]
+      }
+    },
+    "diagnosis": {
+      "source_name": "Syöpäjärjestöt / Kaikki syövästä — Syövän toteaminen ja tutkimukset",
+      "source_url": "https://kaikkisyovasta.fi/tietoa-syovasta/mika-on-syopa/syovan-toteaminen-ja-tutkimukset/",
+      "review_status": "example text, not clinically reviewed",
+      "en": {
+        "what_is_happening": "A clinician is explaining what the completed investigations show and what is known so far.",
+        "today_you_can": "Ask for unfamiliar words to be explained and for the next step to be written down. You may bring a support person if you wish.",
+        "ask_these": ["What does this result mean for me?", "What is the next step, and who will coordinate it?"],
+        "who_to_call": "Your named coordinator or the clinic that discussed the result with you.",
+        "myths": [
+          {"myth": "I have to understand everything during one conversation.", "fact": "You can ask questions and ask the team to repeat or write down information."},
+          {"myth": "A scan alone always confirms the diagnosis.", "fact": "A tissue or cell sample may be needed; the appropriate investigations vary."},
+          {"myth": "The result tells me every detail about treatment.", "fact": "Further assessment may be used to plan what happens next."}
+        ]
+      },
+      "fi": {
+        "what_is_happening": "Ammattilainen kertoo, mitä tehdyistä tutkimuksista selviää ja mitä tällä hetkellä tiedetään.",
+        "today_you_can": "Pyydä selittämään vieraat sanat ja kirjaamaan seuraava vaihe. Voit halutessasi ottaa tukihenkilön mukaan.",
+        "ask_these": ["Mitä tämä tulos tarkoittaa minun kohdallani?", "Mikä on seuraava vaihe ja kuka koordinoi sitä?"],
+        "who_to_call": "Nimetty koordinaattorisi tai poliklinikka, jossa tuloksesta keskusteltiin.",
+        "myths": [
+          {"myth": "Minun täytyy ymmärtää kaikki yhdellä keskustelukerralla.", "fact": "Voit kysyä, pyytää selittämään uudelleen tai pyytää tiedot kirjallisina."},
+          {"myth": "Kuvaus yksin varmistaa aina diagnoosin.", "fact": "Diagnoosin varmistamiseen voidaan tarvita solu- tai kudosnäyte. Tutkimukset valitaan tilanteen mukaan."},
+          {"myth": "Tulos kertoo samalla kaikki hoidon yksityiskohdat.", "fact": "Jatkoarvioita voidaan tarvita seuraavien vaiheiden suunnitteluun."}
+        ]
+      }
+    },
+    "decision_treatment": {
+      "source_name": "Syöpäjärjestöt / Kaikki syövästä — Syöpähoidot",
+      "source_url": "https://kaikkisyovasta.fi/tietoa-syovasta/syopahoidot/",
+      "review_status": "example text, not clinically reviewed",
+      "en": {
+        "what_is_happening": "Your care team is discussing the plan for your situation. This guide does not choose or recommend treatment.",
+        "today_you_can": "Write down what matters to you and ask for the plan, expected appointments and contact person in writing.",
+        "ask_these": ["What is the aim of the proposed plan?", "Who can I contact if I have questions or concerns?"],
+        "who_to_call": "Your named coordinator or treating clinic.",
+        "myths": [
+          {"myth": "Everyone with the same cancer receives the same plan.", "fact": "The care team considers the type and extent of disease and the person's situation."},
+          {"myth": "There is only one kind of cancer treatment.", "fact": "There are different treatment approaches; the care team explains what applies to you."},
+          {"myth": "I should not ask the team to explain a treatment word.", "fact": "You can ask the team to explain the plan in words that are clear to you."}
+        ]
+      },
+      "fi": {
+        "what_is_happening": "Hoitotiimi keskustelee tilanteeseesi sopivasta suunnitelmasta. Tämä opas ei valitse eikä suosittele hoitoa.",
+        "today_you_can": "Kirjaa, mikä on sinulle tärkeää. Pyydä suunnitelma, tulevat ajat ja yhteyshenkilö kirjallisina.",
+        "ask_these": ["Mikä on suunnitellun hoidon tavoite?", "Kehen otan yhteyttä, jos minulla on kysymyksiä tai huolia?"],
+        "who_to_call": "Nimetty koordinaattorisi tai sinua hoitava poliklinikka.",
+        "myths": [
+          {"myth": "Kaikki samaa syöpää sairastavat saavat saman suunnitelman.", "fact": "Hoitotiimi huomioi syövän tyypin ja levinneisyyden sekä henkilön tilanteen."},
+          {"myth": "Syöpää hoidetaan vain yhdellä tavalla.", "fact": "Hoitotapoja on erilaisia. Hoitotiimi kertoo, mikä koskee sinua."},
+          {"myth": "En voi pyytää selittämään hoitosuunnitelman sanoja.", "fact": "Voit pyytää hoitotiimiä selittämään suunnitelman ymmärrettävästi."}
+        ]
+      }
+    },
+    "aftercare": {
+      "source_name": "Syöpäjärjestöt / Kaikki syövästä — Seuranta",
+      "source_url": "https://kaikkisyovasta.fi/syovan-jalkeen/seuranta/",
+      "review_status": "example text, not clinically reviewed",
+      "en": {
+        "what_is_happening": "After treatment, follow-up may continue. Its timing and tests depend on the cancer and your care plan.",
+        "today_you_can": "Keep your follow-up details where you can find them. Tell your care team about symptoms or concerns at your visit or through the contact route they gave you.",
+        "ask_these": ["What is my follow-up plan?", "Who should I contact between appointments?"],
+        "who_to_call": "The follow-up clinic or coordinator named in your care plan.",
+        "myths": [
+          {"myth": "Care ends as soon as treatment ends.", "fact": "Follow-up may continue after treatment."},
+          {"myth": "Everyone has the same follow-up schedule.", "fact": "Follow-up varies with cancer type and extent."},
+          {"myth": "I should not mention symptoms between visits.", "fact": "Tell your care team about symptoms so they can assess what to do."}
+        ]
+      },
+      "fi": {
+        "what_is_happening": "Hoitojen jälkeen seuranta voi jatkua. Sen aikataulu ja tutkimukset riippuvat syövästä ja hoitosuunnitelmastasi.",
+        "today_you_can": "Pidä seurantatiedot tallessa. Kerro oireista ja huolista käynnillä tai saamasi yhteydenottotavan kautta.",
+        "ask_these": ["Millainen seurantasuunnitelmani on?", "Kehen otan yhteyttä käyntien välillä?"],
+        "who_to_call": "Seurantapoliklinikka tai hoitosuunnitelmassasi nimetty koordinaattori.",
+        "myths": [
+          {"myth": "Hoito päättyy heti viimeisen hoitokerran jälkeen.", "fact": "Seuranta voi jatkua hoitojen päätyttyä."},
+          {"myth": "Kaikkien seuranta-aikataulu on samanlainen.", "fact": "Seuranta vaihtelee syöpätyypin ja levinneisyyden mukaan."},
+          {"myth": "Oireista ei pidä kertoa käyntien välillä.", "fact": "Kerro oireista hoitotiimille, jotta he voivat arvioida tilanteen."}
+        ]
+      }
+    }
+  },
+  "translation_languages": ["sv", "ar", "so", "ru"],
+  "translation_label": "machine translated, needs human check"
+}

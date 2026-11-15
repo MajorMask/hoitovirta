@@ -1,0 +1,8 @@
+pathway_id,event_type,ts,value,patient_name,age,sex,language,county,cancer
+EX-001,T0,2026-11-02T08:10:00Z,Positive FIT,Eila K.,63,f,fi,Länsi-Uusimaa,colorectal
+EX-001,T1,2026-11-03T09:00:00Z,Referral sent,Eila K.,63,f,fi,Länsi-Uusimaa,colorectal
+EX-001,T2,2026-11-05T11:30:00Z,Referral received,Eila K.,63,f,fi,Länsi-Uusimaa,colorectal
+EX-001,T3,2026-11-12T08:30:00Z,Colonoscopy,Eila K.,63,f,fi,Länsi-Uusimaa,colorectal
+EX-002,T0,2026-10-20T13:00:00Z,Cough over 3 weeks,Yusuf A.,58,m,ar,Länsi-Uusimaa,lung
+EX-002,T1,2026-11-10T10:00:00Z,Referral sent,Yusuf A.,58,m,ar,Länsi-Uusimaa,lung
+EX-003,T0,2026-11-09T15:20:00Z,Raised PSA,Lars B.,66,m,sv,Helsinki,prostate

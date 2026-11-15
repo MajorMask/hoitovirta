@@ -1,0 +1,129 @@
+# Evidence: every number, its source and its status
+
+Every figure shown in the app or said in our video comes from `data/evidence.json`. This page is generated from that file, so it cannot drift from the app.
+
+**Status words**
+
+- **sourced**: published by a named organisation; the link opens the source.
+- **preliminary**: from a study or news report that is not final yet. Treated as a signal, never as proof.
+- **assumption**: our own planning number, to be tested in a pilot. Always labelled so in the app.
+- **synthetic**: produced by our simulator. Not a finding about real patients.
+
+## Claims we deliberately do not make
+
+- That Hoitovirta has diagnosed, found or saved any real person. All patient data is synthetic.
+- That any model, score or message is clinically validated. The priority score is a rule with hand-set weights.
+- That the product is certified or compliant with any regulation. We say it is designed for privacy: aggregates only, small groups hidden.
+- That the pilot target (about 45 days less in lung cancer) is a result. It is half of the 88-day gap to Denmark (155 minus 67) and is our own goal.
+- That Finland has fewer physicians or nurses than it needs. Finland has more nurses per 1,000 new cancer cases than the EU average (2,223 against 1,376) but fewer physicians (568 against 679).
+
+## The numbers
+
+### Sourced (49)
+
+| Claim | Value | Source |
+|---|---|---|
+| From 1 Jan 2025 the non-urgent primary-care guarantee was relaxed from 14 days to 3 months (over-23s). |  | [STM](https://stm.fi/-/perusterveydenhuollon-kiireettomaan-hoitoon-paasyn-enimmaisajat-pitenevat-vuoden-2025-alusta-lukien) |
+| Cancer care cost about EUR 1.5bn in 2023, projected about EUR 2.6bn by 2035 (+74%) without action; ~38,000 new cancers/yr rising to ~45,000 by 2035. |  | [National Cancer Strategy 2026-2035](https://files.hackjunction.app/resources/Kansallinen_syopastrategia_2026_2035_FINAL.pdf) |
+| NCCN Distress Thermometer: a score of 4 or more (0-10) indicates clinically significant distress and should trigger a call. | 4 | [NCCN Distress Thermometer validation (PMC7587428)](https://pmc.ncbi.nlm.nih.gov/articles/PMC7587428) |
+| Denmark Cancer Patient Pathways (2008): median diagnostic interval 14 days shorter during and 17 days shorter after implementation. | 17 days | [BMC Cancer 2015 (Jensen et al.)](https://peeref.com/zh/works/207197) |
+| Breast screening participation, higher education (2020–21). | 85 % | [OECD/EC Country Cancer Profile Finland 2025](https://cancer-inequalities.jrc.ec.europa.eu/sites/default/files/docs/ccp2025/ec-oecd-fi-2024-1666-en.pdf) |
+| Breast screening participation, lower education (2020–21). | 66 % | [OECD/EC Country Cancer Profile Finland 2025](https://cancer-inequalities.jrc.ec.europa.eu/sites/default/files/docs/ccp2025/ec-oecd-fi-2024-1666-en.pdf) |
+| Breast screening participation, not employed (2020–21). | 60 % | [OECD/EC Country Cancer Profile Finland 2025](https://cancer-inequalities.jrc.ec.europa.eu/sites/default/files/docs/ccp2025/ec-oecd-fi-2024-1666-en.pdf) |
+| Breast screening participation, employed (2020–21). | 87 % | [OECD/EC Country Cancer Profile Finland 2025](https://cancer-inequalities.jrc.ec.europa.eu/sites/default/files/docs/ccp2025/ec-oecd-fi-2024-1666-en.pdf) |
+| Breast screening participation, domestic-language speakers (2020–21). | 82 % | [OECD/EC Country Cancer Profile Finland 2025](https://cancer-inequalities.jrc.ec.europa.eu/sites/default/files/docs/ccp2025/ec-oecd-fi-2024-1666-en.pdf) |
+| Breast screening participation, other-language speakers (2020–21). | 63 % | [OECD/EC Country Cancer Profile Finland 2025](https://cancer-inequalities.jrc.ec.europa.eu/sites/default/files/docs/ccp2025/ec-oecd-fi-2024-1666-en.pdf) |
+| Finnish FIT programme, first local results: 79% of positive tests attended colonoscopy. | 79 % | [Relander et al. 2025 (first local results of the Finnish FIT programme)](https://www.utupub.fi/items/f02dadfc-70ec-4bb2-8c9e-fe3485fb828d/full) |
+| National Cancer Strategy Goal 3 'Ensure equitable and effective cancer care' indicators include: patients get treatment within target times (THL 21/2016); regional and socioeconomic differences are available and used to steer services; reliable information on regional differences in diagnostic and treatment practices. |  | [Kansallinen syöpästrategia 2026-2035](https://files.hackjunction.app/resources/Kansallinen_syopastrategia_2026_2035_FINAL.pdf) |
+| Strategy target: 5-year survival for poor-prognosis cancers reaches Nordic level (SE+NO average): lung +14 pp, pancreas +6 pp, liver +14 pp vs 2023 NORDCAN; cancer mortality -10% (13,300 deaths/yr today). |  | [Kansallinen syöpästrategia 2026-2035](https://files.hackjunction.app/resources/Kansallinen_syopastrategia_2026_2035_FINAL.pdf) |
+| Finnish lung cancer quality-registry pilot 2019-2023: only 27% of patients went to curative treatment; regional differences in diagnostics. | 27 % | [Syöpäjärjestöt via Verkkouutiset](https://www.verkkouutiset.fi/a/keuhkosyopa-todetaan-usein-liian-myohaan-vain-joka-neljas-saa-parantavaa-hoitoa/) |
+| Lung cancer quality-registry pilot (2019-2023): stage information was missing for almost half of patients. |  | [Syöpäjärjestöt report via Verkkouutiset](https://www.verkkouutiset.fi/a/keuhkosyopa-todetaan-usein-liian-myohaan-vain-joka-neljas-saa-parantavaa-hoitoa/) |
+| Lung cancer 5-year relative survival 2018-22 (men): Finland 16.7%, Sweden 26.8%, Norway 28.2%, Denmark 26.2%; Finland women 27.3%. |  | [Acta Oncologica 2025](https://medicaljournalssweden.se/actaoncologica/article/download/43398/50813) |
+| AVI (31 Oct 2025): non-urgent primary-care access in Länsi-Uusimaa wellbeing county was not lawful and equal in 2025; significant intra-county differences. |  | [Kirkkonummen Sanomat](https://www.kirkkonummensanomat.fi/aluehallintovirastolta-huomautukset-hyvinvointialueelle--viivastykset-nuorten-hoitoonpaasyssa-erityisen-moitittavia-6.175.82733.31071b7c32) |
+| Systematic review (59 studies): 70% of studies on time to treatment found a significant reduction with patient navigation; 71% improved adherence; 87% improved satisfaction. |  | [Current Oncology Reports 2024](https://link.springer.com/10.1007/s11912-024-01514-9) |
+| Finland lacks comprehensive national data on cancer treatment delays and has no national cancer quality registry, unlike other Nordic countries. |  | [Yle MOT, 12 Oct 2026](https://yle.fi/a/74-20251023) |
+| Norway pakkeforløp (2015): codes at defined measurement points in patient admin systems; target 70% within max time, met nationally every year 2016-2025 for the diagnostic pathway; mandatory pathway coordinators. |  | [Helsedirektoratet](https://www.helsedirektoratet.no/statistikk/kvalitetsindikatorer/kreft-behandling-og-overlevelse/gjennomføring-av-diagnostisk-pakkeforløp-innen-maksimal-anbefalt-forløpstid) |
+| Norway pakkeforløp: target that at least 70% of patients are diagnosed within the maximum pathway time. | 70 % | [Helsedirektoratet](https://www.helsedirektoratet.no/statistikk/kvalitetsindikatorer/kreft-behandling-og-overlevelse/gjennomføring-av-diagnostisk-pakkeforløp-innen-maksimal-anbefalt-forløpstid) |
+| Clinical cancer notifications at diagnosis cover only about 40% of cases. |  | [National Cancer Strategy 2026-2035](https://files.hackjunction.app/resources/Kansallinen_syopastrategia_2026_2035_FINAL.pdf) |
+| Roadmap 1.2.2 patient-experience target: NPS above 80. | 80 | [Roadmap 2026-2031](https://files.hackjunction.app/resources/Kansallinen_syopastrategia_toimeenpanon_tiekartta_2026_2031.pdf) |
+| Patient survey (n=684, 2024-25): ~1/3 felt diagnosis was delayed; 1/3 needed >=3 healthcare visits before diagnosis; 6% learned diagnosis from OmaKanta. |  | [Suomen Syöpäpotilaat ry survey via Verkkouutiset](https://www.verkkouutiset.fi/a/syopapotilaat-kokevat-ettei-heidan-oireitaan-oteta-vakavasti/) |
+| The next state budget allocates no money to improving cancer outcomes and cuts EUR 400,000 earmarked for the cancer quality registry. |  | [Yle MOT, 12 Oct 2026](https://yle.fi/a/74-20251023) |
+| Roadmap 1.2.2: patient experience targets NPS >80 and HoPP >4.7, collected and reported in all units, published openly 2029-2031. |  | [Roadmap 2026-2031](https://files.hackjunction.app/resources/Kansallinen_syopastrategia_toimeenpanon_tiekartta_2026_2031.pdf) |
+| Roadmap 1.2.3: named cancer care coordinator model; EUR 100,000 for guidance in 2026-2028, adoption by wellbeing counties only in 2029-2031. | 100000 EUR | [Roadmap 2026-2031](https://files.hackjunction.app/resources/Kansallinen_syopastrategia_toimeenpanon_tiekartta_2026_2031.pdf) |
+| Roadmap 2.5.2: standardised referral criteria and symptom-driven pathways based on Danish/Swedish/Norwegian models, incl. direct investigation routes and rapid access; >=5 most common cancers + county pilots in 2026-2028, all major cancers 2029-2031 (owner FICAN). |  | [Roadmap 2026-2031](https://files.hackjunction.app/resources/Kansallinen_syopastrategia_toimeenpanon_tiekartta_2026_2031.pdf) |
+| Roadmap 3.1.2: cancer-specific pathways with target waiting times and coding practices for 5 cancers in 2026-2028, all major cancers in 2029-2031; indicator: patients treated within target times. Funded within 3.1.1 (EUR 5M/yr, EUR 25M over 5 years). | 5000000 EUR | [Roadmap 2026-2031](https://files.hackjunction.app/resources/Kansallinen_syopastrategia_toimeenpanon_tiekartta_2026_2031.pdf) |
+| Roadmap 3.2.2-3.2.3: annual national peer review and benchmarking among wellbeing counties (EUR 300k) and mechanisms to act on deviations (EUR 3M). | 300000 EUR | [Roadmap 2026-2031](https://files.hackjunction.app/resources/Kansallinen_syopastrategia_toimeenpanon_tiekartta_2026_2031.pdf) |
+| Roadmap 2026-2031 total EUR 139.1M (Goal 3: EUR 49.73M). Strategy cost EUR 156M over 5 years, about EUR 5.5 per inhabitant per year vs Denmark EUR 13 and Sweden EUR 4; expected savings EUR 305M. |  | [Roadmap appendix; National Cancer Strategy](https://files.hackjunction.app/resources/Kansallinen_syopastrategia_toimeenpanon_tiekartta_2026_2031.pdf) |
+| 2024 screening participation: breast 81.6%, colorectal 73.5%, cervical 73.5%. Lowest counties: Helsinki, Vantaa-Kerava, Länsi-Uusimaa. Strategy target >=80% in every programme in every county. Recommended: evening/weekend slots, reasonable travel distance. |  | [Finnish Cancer Registry release 30 Jun 2026](https://www.sttinfo.fi/tiedote/72173590/kolme-aluetta-erottuu-edukseen-syopaseulonnoissa-helsingissa-osallistuminen-jaa-selvasti-jalkeen?lang=fi) |
+| 2024 breast screening participation, Finland. | 81.6 % | [Finnish Cancer Registry release 30 Jun 2026](https://www.sttinfo.fi/tiedote/72173590/kolme-aluetta-erottuu-edukseen-syopaseulonnoissa-helsingissa-osallistuminen-jaa-selvasti-jalkeen?lang=fi) |
+| 2024 cervical screening participation, Finland. | 73.5 % | [Finnish Cancer Registry release 30 Jun 2026](https://www.sttinfo.fi/tiedote/72173590/kolme-aluetta-erottuu-edukseen-syopaseulonnoissa-helsingissa-osallistuminen-jaa-selvasti-jalkeen?lang=fi) |
+| 2024 screening participation. Highest: Etelä-Pohjanmaa, Etelä-Savo, Kainuu. Lowest: Helsinki, Vantaa–Kerava, Länsi-Uusimaa. |  | [Finnish Cancer Registry release 30 Jun 2026](https://www.sttinfo.fi/tiedote/72173590/kolme-aluetta-erottuu-edukseen-syopaseulonnoissa-helsingissa-osallistuminen-jaa-selvasti-jalkeen?lang=fi) |
+| 2024 colorectal screening participation, Finland. | 73.5 % | [Finnish Cancer Registry release 30 Jun 2026](https://www.sttinfo.fi/tiedote/72173590/kolme-aluetta-erottuu-edukseen-syopaseulonnoissa-helsingissa-osallistuminen-jaa-selvasti-jalkeen?lang=fi) |
+| Breast screening 2020-21: 60% non-employed vs 87% employed; 63% non-domestic-language vs 82%; 66% lower education vs 85% higher. Lowest region Helsinki 73%. |  | [OECD/EC Country Cancer Profile Finland 2025](https://cancer-inequalities.jrc.ec.europa.eu/sites/default/files/docs/ccp2025/ec-oecd-fi-2024-1666-en.pdf) |
+| 2024: the gap between the highest and lowest wellbeing county is 7 to 14 percentage points, depending on the programme. Per-county percentages are not given in the public release. |  | [Finnish Cancer Registry release 30 Jun 2026](https://www.sttinfo.fi/tiedote/72173590/kolme-aluetta-erottuu-edukseen-syopaseulonnoissa-helsingissa-osallistuminen-jaa-selvasti-jalkeen?lang=fi) |
+| Target: at least 80% participation in every screening programme in every wellbeing county. | 80 % | [Finnish Cancer Registry release 30 Jun 2026](https://www.sttinfo.fi/tiedote/72173590/kolme-aluetta-erottuu-edukseen-syopaseulonnoissa-helsingissa-osallistuminen-jaa-selvasti-jalkeen?lang=fi) |
+| Sweden SVF (2015): inclusion and lead-time targets (>=80% within lead times), national waiting-time database, annual national PREM survey, state performance payments (SEK 182.5M in Dec 2024). |  | [Socialstyrelsen / Regeringen](https://www.regeringen.se/pressmeddelanden/2024/12/positiva-resultat-inom-cancervarden/) |
+| Sweden SVF: target that at least 80% of patients are seen within the lead times. | 80 % | [Socialstyrelsen / Regeringen](https://www.regeringen.se/pressmeddelanden/2024/12/positiva-resultat-inom-cancervarden/) |
+| Stage (spread) information was recorded for only 42% of cancer cases nationally in the Cancer Registry's Syöpä 2024 report. Without it the stage I–II share cannot be reported. Highest: Pirkanmaa 72%; other areas 33–42%. | 42 % | [Finnish Cancer Registry, Syöpä 2024 (via Verkkouutiset, 17 Jun 2026)](https://www.verkkouutiset.fi/a/syopatiedoissa-isot-alueelliset-erot-yksi-seutu-erottuu/) |
+| Cancer Registry aim: raise stage-information coverage to at least 70% in the coming years. | 70 % | [Finnish Cancer Registry, Syöpä 2024 (via Verkkouutiset, 17 Jun 2026)](https://www.verkkouutiset.fi/a/syopatiedoissa-isot-alueelliset-erot-yksi-seutu-erottuu/) |
+| Target: at least 70% of cancers diagnosed at stages I-II by 2035 (indicator for symptom-awareness communication and standardised referral criteria). | 70 % | [Roadmap 2026-2031, measures 1.3.2 and 2.5.2](https://files.hackjunction.app/resources/Kansallinen_syopastrategia_toimeenpanon_tiekartta_2026_2031.pdf) |
+| 5-year relative survival: lower education 64% (men) / 65% (women) vs higher education 77% / 78%; no significant regional difference. |  | [OECD/EC Country Cancer Profile Finland 2025](https://cancer-inequalities.jrc.ec.europa.eu/sites/default/files/docs/ccp2025/ec-oecd-fi-2024-1666-en.pdf) |
+| THL guidance 21/2016: maximum 6 weeks from arrival of a suspected-cancer referral to first treatment; imaging, sampling and pathology statements each within 1 week; adjuvant therapy within 4 weeks of surgery. | 42 days | [THL Ohjaus 21/2016](https://core.ac.uk/download/78470017.pdf) |
+| THL 21/2016 measurement points: referral arrival, first doctor visit, placement in treatment queue, first cancer treatment. |  | [THL Ohjaus 21/2016](https://core.ac.uk/download/78470017.pdf) |
+| England Faster Diagnosis Standard: diagnosis or rule-out within 28 days of urgent referral; only about half met on time per CRUK analysis. |  | [Cancer Research UK, Sep 2025](https://news.cancerresearchuk.org/2025/09/11/just-half-of-urgently-referred-cancer-patients-are-diagnosed-on-time/) |
+| 568 physicians per 1,000 new cancer cases in Finland vs 679 EU average; 2,223 nurses vs 1,376 EU. |  | [OECD/EC Country Cancer Profile Finland 2025](https://cancer-inequalities.jrc.ec.europa.eu/sites/default/files/docs/ccp2025/ec-oecd-fi-2024-1666-en.pdf) |
+
+### Preliminary (10)
+
+| Claim | Value | Source |
+|---|---|---|
+| Lung cancer: Finland is 88 days slower than Denmark from symptom to treatment (155 vs 67). |  | [Calculated from Yle MOT figures (155 − 67)](https://yle.fi/a/74-20251023) |
+| Comparable lung cancer symptom-to-treatment delay in Denmark: 67 days. | 67 days | [Yle MOT, 12 Oct 2026](https://yle.fi/a/74-20251023) |
+| Lung cancer: average symptom-onset to treatment in Finland is ~155 days (patient >50 d, primary care 41 d, specialist care 58 d). | 155 days | [Yle MOT, reporting preliminary UEF study (Prof. Outi Kuittinen), 12 Oct 2026](https://yle.fi/a/74-20251023) |
+| Comparable lung cancer symptom-to-treatment delay in Sweden: 107 days. | 107 days | [Yle MOT, 12 Oct 2026](https://yle.fi/a/74-20251023) |
+| Lung cancer: patient segment is reported as '>50 days'; 56 days is the remainder of the 155-day total after primary (41) and specialist (58) care. |  | [Calculated from Yle MOT figures (155 − 41 − 58)](https://yle.fi/a/74-20251023) |
+| Lung cancer: primary-care segment of the pathway is 41 days. | 41 days | [Yle MOT, reporting preliminary UEF study, 12 Oct 2026](https://yle.fi/a/74-20251023) |
+| Lung cancer: specialist-care segment of the pathway is 58 days. | 58 days | [Yle MOT, reporting preliminary UEF study, 12 Oct 2026](https://yle.fi/a/74-20251023) |
+| Lung cancer: the specialist-care segment (58 d) exceeds the 42-day THL target by 16 days. The segments may not be defined identically, so treat it as a signal, not a measurement. |  | [Calculated from Yle MOT and THL 21/2016 (58 − 42)](https://yle.fi/a/74-20251023) |
+| Fast-track: days saved in primary care. Danish pathways cut the diagnostic interval by 17 days; the split between primary and specialist care is a team assumption. | 7 days | [BMC Cancer 2015 (Jensen et al.), split assumed](https://peeref.com/zh/works/207197) |
+| Fast-track: days saved in specialist care (see sim_fasttrack_primary; 7 + 10 = the Danish 17 days). | 10 days | [BMC Cancer 2015 (Jensen et al.), split assumed](https://peeref.com/zh/works/207197) |
+
+### Assumption (24)
+
+| Claim | Value | Source |
+|---|---|---|
+| Coordinator caseload, salary and programme cost are not publicly sourced. To be set with the county. |  | Not sourced; set with the county |
+| Finland has 21 wellbeing services counties (Helsinki organises its own services). 'Counties reporting' is shown against 21. | 21 | Team note, the process playbook §8 |
+| Flag a language or area when its median days from first contact to diagnosis exceed the county median by more than this many days. | 7 days | Team assumption |
+| A newly fast-tracked patient gets a first call from the coordinator within this many working days (SOP-2, the process playbook). New fast-tracks rank first until the first message is sent. | 1 days | Team SOP-2 (process playbook) |
+| A positive FIT with no colonoscopy booked within this many days is flagged (safety-net rule, the pathway notes). Shown as 'Day N / 14' on the coordinator's list. | 14 days | Team safety-net rule (pathway notes) |
+| In the 14-day forecast, a pathway with an open loop is assumed to wait a further 25 days (the lower end of the patient chase delay in the synthetic model) before its next step, unless the loop is closed. | 25 days | Team assumption |
+| An open loop is flagged when a completed step has no booked next step after this many days (SOP-3, the process playbook). | 7 days | Team assumption (safety-net rule) |
+| Aggregate cells with fewer than 5 pathways are suppressed. | 5 | Common statistical disclosure practice; team setting |
+| A specialist unit accepts or returns a referral within this many days, visibly (Fast-diagnosis lane, the governance notes). | 3 days | Team SOP, the governance notes |
+| Symptom awareness and 'when to call' info in own language: days saved in the patient segment. The effect size is a team assumption. | 7 days | [Team assumption](https://yle.fi/a/74-20251023) |
+| Named coordinator: days saved in the specialist segment. Direction is supported (70% of studies find shorter time to treatment); the size in Finland is a team assumption to validate in a pilot. | 7 days | [Team assumption; direction from Current Oncology Reports 2024](https://link.springer.com/10.1007/s11912-024-01514-9) |
+| GP direct access to imaging: days saved in primary care. THL sets a 1-week imaging target; the effect size is a team assumption. | 8 days | [Team assumption; target from THL 21/2016](https://core.ac.uk/download/78470017.pdf) |
+| Red-flag triage SOP and re-contact rule: days saved in primary care. A third of patients needed 3+ visits; the effect size is a team assumption. | 5 days | [Team assumption; context from patient survey 2024–25](https://www.verkkouutiset.fi/a/syopapotilaat-kokevat-ettei-heidan-oireitaan-oteta-vakavasti/) |
+| Reserved (ring-fenced) diagnostic slots per test type, county and working day in the prototype: two (08:30 and 13:00). | 2 | Prototype setting |
+| Target days from one pathway step to the next (referral sent 2, received 2, first test 7, diagnosis 7, MDT 7, treatment 14). Tests, sampling and pathology within 1 week follow THL 21/2016; the other limits are a team assumption. They sum to 39 days, inside the 42-day target. |  | [THL 21/2016 (1-week targets); other limits assumed](https://core.ac.uk/download/78470017.pdf) |
+| Share of report fields extracted automatically without a human check: 30% then 60% then 80% (roadmap 4.1.1 as listed in the process playbook). Target shown: 80%. | 80 % | Team process playbook (process playbook) |
+| Actionable report findings closed (a next step booked): target above 90% (process playbook §4). | 90 % | Team process playbook (process playbook) |
+| Triage target: contacts before referral at most 2 (process playbook §2). | 2 | Team process playbook (process playbook) |
+| SOP-2: a coordinator is named within 1 working day of T0 (target 100%). | 100 % | Team process playbook (process playbook) |
+| Patients who know what happens next (PU4 yes): target above 90% (process playbook §1). | 90 % | Team process playbook (process playbook) |
+| SOP-6: an interpreter flag is set for every patient who does not speak Finnish, Swedish or English (target 100%). | 100 % | Team process playbook (process playbook) |
+| SOP-3: no open loop older than 7 days (target 0). | 0 | Team process playbook (process playbook) |
+| Slips are resolved within 2 days (target: at least 90% of reported slips). | 90 % | Team process playbook (process playbook) |
+| Stage recorded in at least 90% of diagnoses (roadmap 3.2.1 as listed in the process playbook). | 90 % | Team process playbook (process playbook) |
+
+### Synthetic (6)
+
+| Claim | Value | Source |
+|---|---|---|
+| Prototype: extra days Arabic speakers wait in primary care in the synthetic cohort. | 9 days | Synthetic demo cohort, not real patients |
+| Prototype: share answering 'Yes' to 'Do you know what happens next?' in the synthetic cohort. | 72 % | Synthetic demo cohort, not real patients |
+| Prototype: open loops in the synthetic cohort. | 12 | Synthetic demo cohort, not real patients |
+| Prototype: share found at stage I–II in the synthetic cohort. | 41 % | Synthetic demo cohort, not real patients |
+| Prototype: median days from first contact (T0) to diagnosis in the synthetic Länsi-Uusimaa cohort. Finland does not measure this nationally; Hoitovirta records it. | 47 days | Synthetic demo cohort, not real patients |
+| Prototype: share treated within 6 weeks in the synthetic Länsi-Uusimaa lung cohort. | 64 % | Synthetic demo cohort, not real patients |

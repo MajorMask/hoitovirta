@@ -1,0 +1,504 @@
+/* Hoitovirta design language (the design language): Finnish public services, not an "AI dashboard".
+   White, flat, square, typographic. One accent. Hairlines instead of cards. Links always underlined. Alerts are left-border bands. */
+:root{--ink:#1A1A1A;--muted:#5A6367;--accent:#0F6E6A;--accent-d:#0A4F4C;--line:#D2D7DA;--panel:#F6F7F8;--alert:#B01038;--warn:#B4501A;--warn-bg:#FFF4EC;--bar:#C9CFD2}
+*{box-sizing:border-box}
+html,body{margin:0;background:#fff;color:var(--ink);font:400 16px/1.5 'Source Sans 3','Source Sans Pro',Arial,sans-serif}
+h1,h2,h3{margin:0;font-weight:700;color:var(--ink)}
+h1{font-size:1.625rem;line-height:1.2}h2{font-size:1.25rem;line-height:1.25}h3{font-size:1.0625rem}
+a{color:var(--accent);text-decoration:underline}a:hover{color:var(--accent-d)}
+button,select,textarea,input{font:inherit;color:inherit}
+:focus-visible{outline:3px solid #1A1A1A;outline-offset:2px}
+.muted{color:var(--muted)}.small{font-size:0.875rem;color:var(--muted)}.xs{font-size:0.8125rem;color:var(--muted)}
+
+/* frame: grey header strip + white body, like an EHR side panel */
+.hdr{background:#fff;border-bottom:1px solid var(--line)}
+.brand{font-weight:700;font-size:1.125rem}
+.roles{display:flex;gap:0;flex-wrap:wrap}
+.roles a{display:flex;flex-direction:column;justify-content:center;min-height:56px;padding:6px 9px;color:var(--ink);text-decoration:none;border-bottom:4px solid transparent;font-weight:600;line-height:1.15}
+.roles a small{font-weight:400;color:var(--muted);font-size:0.8125rem}
+.roles a:hover{text-decoration:underline}
+.roles a[aria-current="page"]{border-bottom-color:var(--accent)}
+.roles a[aria-disabled="true"]{color:var(--muted);pointer-events:none}
+.hdr .right{display:flex;flex-direction:column;align-items:flex-end;gap:2px;font-size:0.8125rem;color:var(--muted);padding:6px 0}
+.langs a{margin-left:10px;font-size:0.875rem}.langs a[aria-current="true"]{color:var(--ink);font-weight:700;text-decoration:none}
+main{max-width:80rem;margin:0 auto;padding:1.5rem 1.5rem 3rem;position:relative;width:100%;flex:1 0 auto}main:focus{outline:none}
+.foot{max-width:80rem;width:100%;margin:0 auto;padding:1rem 1.5rem 2.5rem;border-top:1px solid var(--line);color:var(--muted);font-size:0.8125rem;display:flex;gap:16px;flex-wrap:wrap;align-items:center}
+.foot a,.foot .linkbtn{color:var(--muted);font-size:0.8125rem;min-height:0}
+
+.page-head{display:flex;align-items:baseline;gap:20px;flex-wrap:wrap;margin-bottom:20px}
+.page-head .sub{color:var(--muted)}
+.sel,select{min-height:44px;border:1px solid var(--ink);border-radius:2px;padding:0 10px;background:#fff}
+.field{display:flex;flex-direction:column;gap:4px;margin:12px 0}
+.field label{font-size:0.9375rem;font-weight:600}
+.field input[type=text],.field textarea,.field select{border:1px solid var(--ink);border-radius:2px;padding:10px 12px;background:#fff;min-height:44px;width:100%}
+.field textarea{min-height:150px;line-height:1.5}
+
+/* buttons: rectangles, one primary per screen */
+.btn{min-height:48px;padding:0 24px;border:1px solid var(--accent);border-radius:2px;background:#fff;color:var(--accent);font-weight:600;font-size:1.0625rem;cursor:pointer}
+.btn.primary{background:var(--accent);color:#fff}
+.btn.primary:hover:not(:disabled){background:var(--accent-d)}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.btn.wide{width:100%}
+.actions{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:16px}
+.linkbtn{background:none;border:0;padding:0;color:var(--accent);text-decoration:underline;cursor:pointer;font-size:inherit;min-height:44px}
+
+/* alerts and notices: full-width band with an 8px left border, words not colours */
+.band{border-left:8px solid var(--accent);background:var(--panel);padding:12px 16px;margin:14px 0;line-height:1.5}
+.band.warn{border-left-color:var(--warn);background:var(--warn-bg)}
+.band.alert{border-left-color:var(--alert);background:#FDEEF1}
+.status{display:inline-block;font-size:0.875rem;padding:2px 8px;border-left:6px solid var(--muted);background:var(--panel)}
+.status.alert{border-left-color:var(--alert)}.status.warn{border-left-color:var(--warn)}.status.ok{border-left-color:var(--accent)}
+
+/* two-pane worklist layout */
+.split{display:grid;grid-template-columns:minmax(320px,460px) minmax(0,1fr);border-top:1px solid var(--line)}
+.split>.left{border-right:1px solid var(--line)}
+.split>.right{padding:24px 32px}
+@media(max-width:56em){.split{grid-template-columns:minmax(0,1fr)}.split>.left{border-right:0;border-bottom:1px solid var(--line)}.split>.right{padding:20px 16px}}
+.list-head{padding:16px 16px 8px;display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.wrow{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1.9fr) auto;gap:12px;align-items:center;width:100%;text-align:left;padding:13px 16px;background:#fff;border:0;border-bottom:1px solid var(--line);cursor:pointer;min-height:56px}
+.wrow:hover{background:var(--panel)}
+.wrow[aria-pressed="true"]{background:var(--panel);border-left:4px solid var(--accent);padding-left:12px}
+.wrow .nm{font-weight:600}.wrow .why{color:var(--muted);font-size:0.9375rem}
+.wrow .why.bad{color:var(--ink)}
+.wrow.fresh{animation:fresh 6s ease-out}
+@keyframes fresh{0%,70%{background:#E9F3F2}100%{background:#fff}}
+
+/* pathway strip */
+.strip{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:8px;margin:16px 0 4px}
+.strip .s .b{height:6px;background:var(--bar)}
+.strip .s.done .b{background:var(--accent)}.strip .s.current .b{background:var(--accent);opacity:.4}.strip .s.current.stuck .b{background:var(--warn);opacity:1}
+.strip .s .l{font-size:0.8125rem;color:var(--muted);margin-top:6px;line-height:1.2}.strip .s .d{font-size:0.8125rem;font-weight:600}
+
+/* metric row: big numbers separated by hairlines (county board) */
+.metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));margin-bottom:24px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.metric{padding:14px 20px;border-left:1px solid var(--line);display:flex;flex-direction:column;gap:2px}
+.metric:first-child{border-left:0;padding-left:0}
+.metric .n{font-size:2.375rem;font-weight:700;line-height:1.1}
+.metric .n.bad{color:var(--warn)}
+.metric .lab{font-size:0.9375rem;color:var(--muted)}
+.flash{animation:flash 2.5s ease-out}@keyframes flash{0%,60%{background:#E9F3F2}100%{background:transparent}}
+
+/* panels and tables */
+.cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px;margin-bottom:24px}
+@media(max-width:56em){.cols{grid-template-columns:minmax(0,1fr)}}
+.block{border-top:1px solid var(--line);padding-top:16px}
+.block h2{margin-bottom:4px}.block .hint{color:var(--muted);font-size:0.9375rem;margin-bottom:12px}
+.box{border:1px solid var(--line);padding:20px}
+.brow{display:grid;grid-template-columns:130px minmax(0,1fr) 64px;gap:14px;align-items:center;padding:7px 0}
+.brow .bar{position:relative;height:14px;background:#EEF0F1}
+.brow .bar i{position:absolute;inset:0 auto 0 0;background:var(--accent)}.brow .bar i.bad{background:var(--warn)}.brow .bar i.grey{background:#9AA5AA}
+.brow .bar b{position:absolute;top:-4px;bottom:-4px;width:2px;background:var(--ink)}
+.brow .v{font-weight:600;text-align:right}
+table.t{width:100%;border-collapse:collapse}
+table.t th{text-align:left;font-size:0.875rem;font-weight:600;color:var(--muted);padding:10px 12px;border-bottom:1px solid var(--ink);vertical-align:bottom}
+table.t td{padding:12px;border-bottom:1px solid var(--line);font-size:1rem}
+table.t tr.bench td{color:var(--muted);font-size:0.875rem}
+table.t tr.tot td{font-weight:700;background:var(--panel)}
+table.t td.num{font-weight:600;font-size:1.125rem}
+table.t td.bad{color:var(--warn)}
+.scrollx{overflow-x:auto}
+dl.kv{display:grid;grid-template-columns:140px minmax(0,1fr);gap:6px 16px;margin:12px 0}dl.kv dt{color:var(--muted);font-size:0.9375rem}dl.kv dd{margin:0;font-weight:600}
+.qitem{border-bottom:1px solid var(--line);padding:12px 0}.qitem .t{font-weight:600}.qitem .x{color:var(--muted);font-size:0.9375rem}
+.fc{display:flex;align-items:flex-end;gap:3px;height:110px;margin:10px 0 4px}
+.fc .col{flex:1;position:relative;height:100%;display:flex;align-items:flex-end}
+.fc .col i{width:100%;background:var(--warn)}
+.fc .col u{position:absolute;bottom:0;left:0;right:0;border:2px solid var(--accent);background:transparent}
+.fc-axis{display:flex;justify-content:space-between;font-size:0.8125rem;color:var(--muted)}
+.dec{border-top:1px solid var(--line);padding:14px 0}
+.dec h3{margin:0 0 4px}.dec ul{margin:6px 0;padding-left:20px;color:var(--muted);font-size:0.9375rem}
+.meter{display:inline-block;width:140px;height:8px;background:#EEF0F1;vertical-align:middle;margin-right:8px}.meter i{display:block;height:100%;background:var(--accent)}.meter i.low{background:var(--warn)}
+ul.plain{margin:8px 0;padding-left:20px}
+
+/* checkboxes: real 22px squares, solid accent when checked */
+input[type=checkbox]{appearance:none;-webkit-appearance:none;width:22px;height:22px;border:2px solid var(--ink);background:#fff;border-radius:0;display:inline-grid;place-content:center;flex:none;margin:0;cursor:pointer}
+input[type=checkbox]:checked{background:var(--accent);border-color:var(--accent)}
+input[type=checkbox]:checked::after{content:"";width:6px;height:11px;border:solid #fff;border-width:0 3px 3px 0;transform:rotate(45deg) translate(-1px,-1px)}
+.check{display:flex;gap:12px;align-items:center;min-height:44px;padding:4px 0}
+.check.row{border-bottom:1px solid var(--line);padding:10px 4px;font-size:1.125rem;width:100%;text-align:left;background:#fff;border-top:0;border-left:0;border-right:0;cursor:pointer}
+.pick{display:flex;flex-direction:column;margin-top:6px}.pick button{min-height:44px;text-align:left;border:0;border-bottom:1px solid var(--line);background:#fff;padding:8px 4px;cursor:pointer}.pick button:hover{background:var(--panel)}
+
+/* sources: small underlined links under the number they support; status in words */
+.src{font-size:0.8125rem;color:var(--muted)}.src a{color:var(--accent)}
+.srcs{display:flex;flex-wrap:wrap;gap:2px 12px;margin-top:2px;font-size:0.8125rem}
+.supp{color:var(--muted);font-size:0.875rem}
+
+/* patient screens: Suomi.fi / Terveyskylä-style service page, 18px text, 56px buttons */
+.demo-bar{display:flex;align-items:center;gap:8px;margin:0 auto 14px;max-width:min(27rem,100%);flex-wrap:wrap;font-size:0.9375rem}
+.phone{max-width:min(27rem,100%);margin:0 auto;border:1px solid var(--line);background:#fff}
+.phone .ph-head{display:flex;justify-content:space-between;align-items:center;padding:14px 24px;border-bottom:1px solid var(--line);font-size:1rem}
+.phone .ph-body{padding:24px;display:flex;flex-direction:column;gap:20px;font-size:1.125rem}
+.phone .label{font-size:1rem;color:var(--muted)}
+.phone .big{font-size:2rem;line-height:1.15;font-weight:700}
+.phone .when{font-size:1.25rem}
+.phone .btn{min-height:56px;font-size:1.125rem}
+.phone .card{border:1px solid var(--line);padding:16px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.phone .card .btn{min-height:48px;width:112px;padding:0}
+.seg{display:flex;gap:4px}.seg i{flex:1;height:4px;background:var(--line)}.seg i.on{background:var(--accent)}.seg i.cur{background:var(--accent);opacity:.4}
+.qtext{font-size:1.75rem;line-height:1.2;font-weight:700}
+.opts{display:flex;flex-direction:column;gap:12px}
+.opts .btn{min-height:60px;text-align:left;padding:0 18px;border:1px solid var(--ink);color:var(--ink);font-weight:400;font-size:1.25rem;width:100%}
+.opts.scale{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px}.opts.scale .btn{padding:0;text-align:center}
+.msgtext{white-space:pre-line;line-height:1.6}
+.heard{background:var(--panel);padding:10px 12px;font-size:1rem;color:var(--muted)}
+@media(max-width:44em){.hdr{gap:8px;padding:0 12px}.roles{order:3;flex-basis:100%;flex-wrap:nowrap;overflow-x:auto}.roles a{flex:0 0 auto}.hdr .right{margin-left:auto}main{padding:16px 12px 40px}.phone{border-left:0;border-right:0}}
+
+details.demo summary{cursor:pointer;color:var(--muted);font-size:0.8125rem;text-decoration:underline;min-height:24px}
+.pack{max-width:820px}.pack h2{font-size:1.125rem}
+@media print{.hdr,.foot,.no-print{display:none!important}main{padding:0}body{font-size:12pt}}
+.field input[type=file]{min-height:44px;padding:8px 0;font-size:0.9375rem}
+
+/* role metric strip (process playbook section B) */
+.mstrip{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));border:1px solid var(--line);margin:0 0 20px;background:#fff}
+.mcell{padding:10px 14px;border-left:1px solid var(--line);display:flex;flex-direction:column;gap:1px;min-height:92px}
+.mcell:first-child{border-left:0}
+.mcell .mn{font-size:1.5rem;font-weight:700;line-height:1.15}
+.mcell .ml{font-size:0.8125rem;color:var(--muted);line-height:1.25}
+.mcell .mt{font-size:0.8125rem;margin-top:2px;padding-left:6px;border-left:4px solid var(--line)}
+.mcell .mt.ok{border-left-color:var(--accent)}.mcell .mt.warn{border-left-color:var(--warn)}
+.mcell .srcs{font-size:0.75rem}
+
+/* logo + brand */
+.brand{display:flex;align-items:center;gap:10px;color:var(--ink);text-decoration:none;font-weight:700;font-size:1.25rem;letter-spacing:-.01em;min-height:44px}
+.brand img{width:32px;height:32px;display:block}
+.brand:hover{text-decoration:none;color:var(--accent-d)}
+.phone .ph-head .brand{font-size:1.125rem}.phone .ph-head .brand img{width:26px;height:26px}
+
+/* buttons: clearer states, still flat and square */
+.btn{transition:background-color .12s,border-color .12s,color .12s}
+.btn:hover:not(:disabled){background:#E9F3F2}
+.btn.primary:hover:not(:disabled){background:var(--accent-d);border-color:var(--accent-d)}
+.btn:active:not(:disabled){background:#D5E8E6}.btn.primary:active:not(:disabled){background:#083E3B}
+.btn.busy{position:relative;color:transparent!important}
+.btn.busy::after{content:"";position:absolute;inset:0;margin:auto;width:18px;height:18px;border:3px solid #fff;border-right-color:transparent;border-radius:50%;animation:spin .8s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.phone .card .btn{width:auto;min-width:112px;padding:0 18px}
+.phone .band.support{border-left-color:var(--accent);background:#F6F7F8;font-size:1.125rem}
+.phone .reassure{font-size:1.125rem}
+
+/* expert view: denser, quieter, keyboard-driven. Deliberately NOT the accessible default (targets below 44px, no helper text). */
+body.expert{font-size:0.875rem}
+body.expert .hint,body.expert .help{display:none}
+body.expert main{padding:12px 16px 32px}
+body.expert .page-head{margin-bottom:10px;gap:12px}body.expert h1{font-size:1.25rem}body.expert h2{font-size:1rem}
+body.expert .btn{min-height:34px;padding:0 12px;font-size:0.875rem}
+body.expert .sel,body.expert select,body.expert .field input[type=text]{min-height:32px;font-size:0.875rem}
+body.expert .wrow{padding:6px 12px;min-height:38px;gap:8px}body.expert .wrow .why{font-size:0.8125rem}
+body.expert .list-head{padding:8px 12px}
+body.expert .split>.right{padding:14px 20px}
+body.expert .metric{padding:8px 14px}body.expert .metric .n{font-size:1.75rem}
+body.expert .mstrip{margin-bottom:10px}body.expert .mcell{min-height:0;padding:6px 10px}body.expert .mcell .mn{font-size:1.1875rem}
+body.expert table.t td{padding:6px 10px;font-size:0.875rem}body.expert table.t th{padding:6px 10px}
+body.expert .check.row{padding:4px 4px;font-size:0.875rem;min-height:30px}
+body.expert .box{padding:12px}body.expert .band{padding:8px 12px;margin:8px 0}
+body.expert .strip{margin:8px 0 2px}
+body.expert .roles a{min-height:44px;padding:4px 8px;font-size:0.875rem}body.expert .roles a small{display:none}
+body.expert .hdr{min-height:44px}
+.kbd{display:inline-block;border:1px solid var(--ink);padding:0 6px;font-size:0.75rem;font-weight:600;background:#fff}
+#shortcuts{position:fixed;inset:0;background:rgba(26,26,26,.55);display:flex;align-items:center;justify-content:center;z-index:50}
+#shortcuts .panel{background:#fff;border:2px solid var(--ink);padding:24px;max-width:460px;width:calc(100% - 32px)}
+#shortcuts li{margin:6px 0}
+.phone .ph-head{flex-wrap:wrap;gap:6px 12px}
+.phone .ph-head .langs{display:flex;flex-wrap:wrap;gap:2px 12px}.phone .ph-head .langs a{margin-left:0}
+
+/* NotesDot: one per screen, flat, 44px tap area */
+.notes{position:relative;z-index:30}
+.notes.inline{position:relative;top:auto;right:auto;display:inline-block;margin-top:4px}
+.notes-btn{min-width:44px;min-height:44px;padding:0;background:transparent;border:0;cursor:pointer;display:inline-grid;place-content:center;color:var(--accent)}
+.notes-btn span{display:inline-grid;place-content:center;width:24px;height:24px;border:1px solid var(--accent);border-radius:2px;background:#fff;font-weight:700;font-size:0.9375rem;font-family:Georgia,serif;font-style:italic;line-height:1}
+.notes-btn[aria-expanded="true"] span{background:var(--accent);color:#fff}
+.notes-panel{position:absolute;right:0;top:46px;width:min(27.5rem,calc(100vw - 2rem));max-height:70vh;overflow:auto;background:#fff;border:1px solid var(--ink);border-left:8px solid var(--accent);padding:12px 16px 14px;text-align:left}
+.notes.inline .notes-panel{right:auto;left:0;width:min(360px,calc(100vw - 64px))}
+.notes-panel[hidden]{display:none}
+.notes-panel h3{font-size:0.9375rem;margin:10px 0 2px}.notes-panel section:first-child h3{margin-top:0}
+.notes-panel p{font-size:0.875rem;margin:0 0 4px}
+.notes-panel .srcs{font-size:0.8125rem;gap:4px 14px}
+
+/* ================= v2 layout pass: tokens, two-tier header, page rhythm, zoom + device friendly ================= */
+:root{--s1:.25rem;--s2:.5rem;--s3:.75rem;--s4:1rem;--s5:1.5rem;--s6:2rem;--s7:3rem;--measure:70ch;--wash:#F3F6F6}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{min-height:100vh;display:flex;flex-direction:column;overflow-wrap:break-word}
+img,svg{max-width:100%}
+h1{font-size:clamp(1.5rem,1.2rem + 1.2vw,2rem)}
+h2{font-size:clamp(1.15rem,1rem + .5vw,1.35rem)}
+p{max-width:var(--measure)}
+.metric p,.mcell p,td p,.wrow p,.band p,.notes-panel p{max-width:none}
+
+/* header: identity + utilities on the top row, role tabs on the second row */
+.hdr-top{max-width:80rem;margin:0 auto;padding:.5rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:.5rem 1.5rem;flex-wrap:wrap}
+.hdr .right{flex-direction:row;align-items:center;flex-wrap:wrap;gap:.25rem 1rem;padding:0;font-size:.8125rem;margin-left:auto}
+.hdr .right #status{color:var(--muted)}
+.hdr .langs{display:inline-flex;gap:.25rem 0}.hdr .langs a{margin:0;padding:.7rem .5rem;font-size:.875rem}
+.hdr .right .linkbtn{min-height:44px;padding:0 .25rem}
+#notes-slot{display:inline-block;min-width:44px;min-height:44px}
+.roles{background:var(--panel);border-top:1px solid var(--line);padding:0 1.5rem;display:flex;overflow-x:auto;scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch;flex-wrap:nowrap}
+.roles>a{flex:0 0 auto;scroll-snap-align:start;padding:.5rem 1rem;min-height:3.25rem}
+@media(min-width:80em){.roles{padding-left:calc((100vw - 80rem)/2 + 1.5rem);padding-right:calc((100vw - 80rem)/2 + 1.5rem)}}
+.roles a[aria-current="page"]{background:#fff;border-bottom-color:var(--accent);box-shadow:none}
+
+/* page head: title, one purpose line, then the controls */
+.page-head{display:flex;flex-wrap:wrap;align-items:center;gap:var(--s2) var(--s4);margin:0 0 var(--s5)}
+.page-head>h1{flex:1 1 100%}
+.page-head>.sub{flex:1 1 100%;order:1;margin:calc(var(--s2)*-1) 0 var(--s1);color:var(--muted);font-size:1rem;max-width:none}
+.page-head>select,.page-head>.counts{order:2}
+.page-head>select{width:auto;max-width:100%}
+
+/* summary strip: one calm band under the title */
+.mstrip{background:var(--wash);border:0;border-top:2px solid var(--accent);margin-bottom:var(--s5)}
+.mstrip .mcell{padding:var(--s3) var(--s4);border-left:1px solid #DDE3E3}
+.mstrip .mcell .mn{font-size:1.5rem}
+.metrics{background:var(--wash);border:0;border-top:2px solid var(--accent);margin-bottom:var(--s5)}
+.metric{padding:var(--s4) var(--s5)}.metric:first-child{padding-left:var(--s5)}
+.metric .n{font-size:clamp(1.75rem,1.4rem + 1.2vw,2.375rem)}
+
+/* panels */
+.split{border:1px solid var(--line);background:#fff}
+.split>.left{background:#fff}
+.list-head{border-bottom:1px solid var(--line);background:var(--wash)}
+.empty{border:1px dashed var(--line);padding:var(--s5);background:var(--wash)}
+.empty h2{margin-bottom:var(--s2)}
+ol.steps{margin:var(--s3) 0 0;padding-left:1.25rem}ol.steps li{margin:var(--s2) 0}
+.block{padding-top:var(--s4)}
+.cols{gap:var(--s6)}
+.band{margin:var(--s4) 0}
+.foot{margin-top:var(--s5);background:#fff}
+.foot>span:first-child{font-weight:600;color:var(--ink)}
+table.t td,table.t th{vertical-align:top;overflow-wrap:normal}
+.scrollx,.t-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+
+/* wide data tables never force the whole page to scroll sideways (WCAG 1.4.10 reflow) */
+main table.t{display:block;overflow-x:auto;max-width:100%}
+main table.t tbody,main table.t thead{display:table;width:100%;min-width:34rem}
+
+/* tablet: single column worklists and two-up grids earlier, comfortable gutters */
+@media(max-width:64em){.hdr-top,.roles,main,.foot{padding-left:1rem;padding-right:1rem}.roles{padding-left:1rem;padding-right:1rem}.split>.right{padding:var(--s5)}}
+/* phone and 400% zoom (320 CSS px): stack everything, keep every control reachable with a thumb */
+@media(max-width:40em){
+  .hdr-top{padding:.25rem .75rem}.roles{padding:0 .5rem}.roles>a{padding:.4rem .75rem}.roles a small{display:none}.roles>a{min-height:44px}
+  main{padding:var(--s4) .75rem var(--s6)}
+  .metrics,.mstrip{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .metric,.mcell{padding:var(--s3)}
+  .metric:first-child{padding-left:var(--s3)}
+  .brow{grid-template-columns:minmax(0,7rem) minmax(0,1fr) 3.5rem;gap:.5rem}
+  .strip{grid-template-columns:repeat(4,minmax(0,1fr));row-gap:var(--s3)}
+  .wrow{grid-template-columns:minmax(0,1fr) auto}.wrow .why{grid-column:1 / -1;order:3}
+  dl.kv{grid-template-columns:1fr}
+  .actions .btn{flex:1 1 100%}
+  .split>.right{padding:var(--s4)}
+  .notes-panel{position:fixed;left:.75rem;right:.75rem;top:auto;bottom:.75rem;width:auto;max-height:70vh}
+  .phone .ph-body{padding:var(--s4)}.phone .ph-head{padding:var(--s3) var(--s4)}
+  .opts.scale{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media(max-width:22em){.metrics,.mstrip{grid-template-columns:1fr}.strip{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+@media(pointer:coarse){.linkbtn,.hdr .langs a{min-height:44px}}
+@media(max-width:40em){
+  .hdr .right{display:contents}
+  .hdr .right #status{display:none}
+  .hdr .brand{order:0;flex:1 1 calc(100% - 3.5rem)}
+  .hdr #notes-slot{order:1;margin-left:auto}
+  .hdr .langs{order:2}.hdr .right>.linkbtn{order:3;margin-left:auto}
+  .hdr-top{gap:0 .5rem}
+  .mcell{min-height:0}
+}
+
+.page-head>.counts{color:var(--muted);font-size:1rem}
+.skip{position:absolute;left:.5rem;top:-4rem;z-index:100;background:#fff;border:2px solid var(--ink);padding:.75rem 1rem;font-weight:600}
+.skip:focus{top:.5rem}
+
+/* ================= patient chat, small motion, quiet polish ================= */
+.hdr .actas{display:inline-flex;align-items:center;gap:.4rem;font-size:.8125rem;color:var(--muted)}
+.hdr .actas select{min-height:44px;font-size:.875rem;max-width:16rem}
+
+.chat h2{margin:0}
+.chat .quick{display:flex;flex-wrap:wrap;gap:8px}
+.chip{min-height:44px;padding:0 14px;border:1px solid var(--accent);border-radius:2px;background:#fff;color:var(--accent);font-weight:600;font-size:1rem;cursor:pointer;text-align:left;transition:background-color .15s,transform .1s}
+.chip:hover{background:#E9F3F2}.chip:active{transform:scale(.98)}
+.thread{display:flex;flex-direction:column;gap:10px;max-height:22rem;overflow-y:auto;padding:4px 2px;scroll-behavior:smooth}
+.bubble{max-width:88%;padding:10px 14px;border:1px solid var(--line);background:#fff;font-size:1.0625rem;line-height:1.5}
+.bubble .who{font-size:.8125rem;font-weight:600;color:var(--muted);margin-bottom:2px}
+.bubble .when{font-size:.75rem;color:var(--muted);margin-top:4px}
+.bubble .txt{white-space:pre-line;overflow-wrap:anywhere}
+.bubble.me{align-self:flex-end;border-color:var(--accent);background:#F1F8F7;border-right:6px solid var(--accent)}
+.bubble.nurse{align-self:flex-start;border-left:6px solid var(--accent);background:var(--panel)}
+.bubble.sys{align-self:center;max-width:100%;border:0;background:transparent;color:var(--muted);font-size:.9375rem;text-align:center}
+.bubble.waiting{display:flex;gap:8px;align-items:center;justify-content:center}
+.dots{display:inline-flex;gap:4px}.dots i{width:6px;height:6px;background:var(--muted);border-radius:50%;animation:blink 1.2s infinite ease-in-out}
+.dots i:nth-child(2){animation-delay:.2s}.dots i:nth-child(3){animation-delay:.4s}
+.chat-in{width:100%;min-height:5.5rem;border:1px solid var(--ink);border-radius:2px;padding:12px;font-size:1.125rem;line-height:1.5;resize:vertical;transition:border-color .15s}
+.chat-in:focus{border-color:var(--accent)}
+.band.alert[style*="display: none"]{display:none}
+
+@keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes pop{from{opacity:0;transform:translateY(8px) scale(.97)}to{opacity:1;transform:none}}
+@keyframes blink{0%,80%,100%{opacity:.25;transform:translateY(0)}40%{opacity:1;transform:translateY(-3px)}}
+@keyframes drawcheck{to{stroke-dashoffset:0}}
+@keyframes fadein{from{opacity:0}to{opacity:1}}
+@keyframes ringpulse{0%{box-shadow:0 0 0 0 rgba(15,110,106,.35)}100%{box-shadow:0 0 0 14px rgba(15,110,106,0)}}
+
+/* first paint of the patient screen: sections rise in one after another, the progress bar fills */
+.phone.enter .ph-body>*{animation:rise .5s cubic-bezier(.2,.7,.2,1) both}
+.phone.enter .ph-body>*:nth-child(2){animation-delay:.06s}.phone.enter .ph-body>*:nth-child(3){animation-delay:.12s}
+.phone.enter .ph-body>*:nth-child(4){animation-delay:.18s}.phone.enter .ph-body>*:nth-child(5){animation-delay:.24s}
+.phone.enter .ph-body>*:nth-child(n+6){animation-delay:.3s}
+.phone.enter .seg i.on,.phone.enter .seg i.cur{transform-origin:left;animation:grow .7s .25s cubic-bezier(.2,.7,.2,1) both}
+.bubble.new{animation:pop .28s cubic-bezier(.2,.7,.2,1) both}
+.phone .btn{transition:background-color .15s,transform .1s,border-color .15s}
+.phone .btn:active:not(:disabled){transform:scale(.985)}
+.phone .opts .btn{transition:background-color .15s,border-color .15s,transform .1s}
+.phone .opts .btn:hover:not(:disabled){border-color:var(--accent);background:#F1F8F7}
+.phone .card .btn.primary{animation:ringpulse 2.4s 1.2s 2}
+.tick{display:block;margin:0 0 4px}.tick circle{fill:none;stroke:var(--accent);stroke-width:3}
+.tick path{fill:none;stroke:var(--accent);stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:40;stroke-dashoffset:40;animation:drawcheck .5s .15s ease-out forwards}
+
+/* staff screens: screens fade in, rows and tabs respond softly (flat, no shadows) */
+main>*{animation:fadein .28s ease-out both}
+.roles a{transition:background-color .15s,border-color .2s,color .15s}
+.wrow{transition:background-color .15s,padding .15s}
+.notes-panel:not([hidden]){animation:rise .18s ease-out both}
+.ask-in{animation:rise .3s ease-out both}
+.metric .n,.mcell .mn{transition:color .3s}
+@media(prefers-reduced-motion:reduce){.phone .card .btn.primary,.tick path{animation:none!important;stroke-dashoffset:0}}
+
+/* "View as": a quiet bordered label + select, in the header for every view */
+.hdr .actas{border:1px solid var(--line);padding:0 0 0 10px;border-radius:2px;background:#fff;color:var(--ink)}
+.hdr .actas span{font-weight:600;font-size:.8125rem;color:var(--muted)}
+.hdr .actas select{border:0;background:transparent;min-height:44px;padding:0 8px;font-size:.875rem;font-weight:600}
+
+/* My path: "Right now" card, prep checklist, one Ask panel */
+.rn{border:1px solid var(--line);border-left:8px solid var(--accent);padding:16px 16px 14px;display:flex;flex-direction:column;gap:8px;background:#fff}
+.rn-sentence{margin:0;font-size:1.0625rem;color:var(--ink)}
+.rn-today{border-top:1px solid var(--line);padding-top:10px}
+.rn-call{display:flex;justify-content:space-between;align-items:center;gap:12px;border-top:1px solid var(--line);padding-top:12px;flex-wrap:wrap}
+.rn-call .btn{flex:0 0 auto}
+.prep{border-top:1px solid var(--line);padding:6px 0}
+.prep-h{font-size:1rem;margin:12px 0 4px}.prep-list{margin:0;padding-left:1.25rem}.prep-list li{margin:2px 0}
+.suggest{display:flex;flex-direction:column;align-items:flex-start;gap:0}
+.suggest .linkbtn{font-size:1.0625rem;text-align:left}
+.bubble.ai{align-self:flex-start;border-left:6px solid var(--muted);background:#fff}
+.ai-actions{margin-top:6px}.ai-actions .linkbtn{min-height:44px;font-size:1rem}
+
+/* patient and family views are phone views: no staff chrome above the greeting; compact header on phones */
+body[data-as="patient"] .page-head,body[data-as="family"] .page-head,body[data-as="patient"] .demo-bar,body[data-as="family"] .demo-bar{display:none}
+@media(max-width:40em){
+  .hdr .actas{order:2;flex:1 1 11rem;min-width:0}.hdr .actas span{display:none}.hdr .actas{padding-left:0}.hdr .actas select{width:100%}
+  .hdr .langs{order:3}.hdr .right>.linkbtn{order:4;margin-left:auto}
+  .demo-bar{margin-bottom:8px}
+  .page-head{margin-bottom:var(--s3)}
+}
+
+.cols>.block,.split>*{min-width:0}
+@media(max-width:40em){.brow .v{white-space:normal!important}}
+#denied{max-width:calc(80rem - 3rem);width:calc(100% - 1.5rem);margin:12px auto 0}
+
+/* ================= the patient section is a calm guide, warmer than the staff screens ================= */
+.phone{background:#FBF8F4;border:1px solid #E7DFD3;border-radius:16px;overflow:visible}
+.phone .ph-head{border-bottom:1px solid #E7DFD3;border-radius:16px 16px 0 0}
+.phone .ph-body{padding-bottom:12px}
+.greet{font-size:1.5rem;font-weight:700;line-height:1.25}
+.phone .rn{border:1px solid #E7DFD3;border-left:8px solid var(--accent);border-radius:16px;background:#fff}
+.phone .card,.phone details.prep,.phone .band{border-radius:12px}
+.phone .band.support{background:#F3EEE6;border-left-color:var(--accent)}
+.phone .btn{border-radius:10px}
+.phone .rn-call{border-top-color:#EFE8DD}.phone .rn-today{border-top-color:#EFE8DD}
+.phone .prep{border:1px solid #E7DFD3;background:#fff;padding:2px 14px 10px}
+
+.ribbon{list-style:none;margin:0;padding:0;display:flex;align-items:flex-start;position:relative}
+.ribbon li{flex:1 1 0;min-width:0;display:flex;flex-direction:column;align-items:center;text-align:center;position:relative;gap:4px;font-size:.8125rem;color:var(--muted)}
+.ribbon li::before{content:"";position:absolute;top:8px;left:-50%;width:100%;height:2px;background:#D9D1C4}
+.ribbon li:first-child::before{display:none}
+.ribbon li.done::before,.ribbon li.here::before{background:var(--accent)}
+.ribbon .dot{width:18px;height:18px;border-radius:50%;background:#fff;border:2px solid #D9D1C4;position:relative;z-index:1}
+.ribbon li.done .dot{background:var(--accent);border-color:var(--accent)}
+.ribbon li.here .dot{background:var(--accent);border-color:var(--accent);box-shadow:0 0 0 4px #CFE5E3}
+.ribbon li.here{color:var(--ink);font-weight:700}
+.ribbon .you{font-size:.75rem;font-weight:600;color:var(--accent)}
+[dir=rtl] .ribbon li::before{left:auto;right:-50%}
+.nudge{display:flex;flex-direction:column;align-items:flex-start;gap:0}
+.nudge .linkbtn{font-size:1.0625rem;text-align:left;min-height:44px}
+.share{margin-top:-6px}.share .linkbtn{font-size:.9375rem;color:var(--muted)}
+
+/* sticky ask bar and the full-screen thread (a sheet) */
+.askbar{position:sticky;bottom:0;z-index:30;background:#FBF8F4;border-top:1px solid #E7DFD3;padding:10px 16px;border-radius:0 0 16px 16px}
+.askbar-field{width:100%;min-height:56px;border:1px solid var(--ink);background:#fff;border-radius:14px;text-align:start;padding:0 16px;font-size:1.125rem;color:var(--muted);cursor:text}
+.askbar-field:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+.sheet{position:fixed;top:0;bottom:0;left:50%;transform:translateX(-50%);width:min(27rem,100%);background:#fff;z-index:70;display:flex;flex-direction:column;gap:10px;padding:14px 16px 16px;animation:fadein .2s ease-out both}
+.sheet[hidden]{display:none}
+.sheet-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+.sheet-head h2{font-size:1.375rem;margin:0}
+.aichip{display:inline-block;margin-top:4px;font-size:.8125rem;color:var(--muted);border:1px solid #D9D1C4;padding:1px 8px;border-radius:8px}
+.sheet-nurse{display:flex;justify-content:space-between;align-items:center;gap:12px;border:1px solid #E7DFD3;border-radius:12px;padding:10px 14px;background:#FBF8F4}
+.sheet .thread{flex:1 1 auto;max-height:none;min-height:6rem}
+body.noscroll{overflow:hidden}
+
+/* three speakers, three treatments: you (accent tint), the guide (warm neutral with a soft path mark), the nurse (white, bordered, tagged) */
+.bubble{border-radius:14px}
+.bubble.me{background:#E9F3F2;border:1px solid #BFDCD9;border-right:1px solid #BFDCD9}
+.bubble.ai{background:#F3EEE6;border:0;border-left:0;color:var(--ink)}
+.bubble.ai .who{color:var(--accent);line-height:0;margin-bottom:6px}
+.bubble.nurse{background:#fff;border:1px solid #CFC7BA;border-left:1px solid #CFC7BA}
+.bubble .tag{margin-inline-start:8px;font-size:.6875rem;font-weight:700;letter-spacing:.02em;color:var(--accent);border:1px solid var(--accent);padding:0 6px;border-radius:6px}
+.ai-actions .btn{min-height:46px;margin-top:4px;font-size:1rem;padding:0 16px}
+
+/* patient and family on a phone: the phone IS the app, so staff chrome steps back and the first screen holds greeting, Right now, ribbon and the ask bar */
+@media(max-width:40em){
+  body[data-as="patient"] .roles,body[data-as="family"] .roles{display:none}
+  body[data-as="patient"] .phone .ph-head .brand,body[data-as="family"] .phone .ph-head .brand{display:none}
+  body[data-as="patient"] main,body[data-as="family"] main{padding-top:8px}
+  .phone .rn{padding:12px 14px;gap:6px}.phone .rn .big{font-size:1.75rem}.phone .ph-body{padding:14px 16px;gap:14px}
+  .phone .rn-today{padding-top:8px}.phone .rn .reassure{font-size:1rem}
+}
+@media(max-width:40em){
+  body[data-as="patient"] .hdr .langs,body[data-as="family"] .hdr .langs,body[data-as="patient"] .hdr .right>.linkbtn,body[data-as="family"] .hdr .right>.linkbtn{display:none}
+}
+
+/* the box inside a checkbox row is only a picture: clicks go to the row (a click on the box itself used to be undone by the browser) */
+button.check input[type=checkbox]{pointer-events:none}
+
+/* optional free-text Pulse step: a real, styled text box, with a Skip that is as big as Save */
+.phone textarea.input{width:100%;min-height:6rem;border:1px solid var(--ink);border-radius:12px;padding:12px;font-size:1.125rem;line-height:1.5;background:#fff;resize:vertical}
+.phone textarea.input:focus{border-color:var(--accent)}
+
+/* optional free-text Pulse step: a styled text box, with a Skip as large as Save */
+.phone textarea.input{width:100%;min-height:6rem;border:1px solid var(--ink);border-radius:12px;padding:12px;font-size:1.125rem;line-height:1.5;background:#fff;resize:vertical}
+.phone textarea.input:focus{border-color:var(--accent)}
+
+/* Today detail: the one next action, then the patient's signals as hairline rows */
+.donow{display:flex;flex-wrap:wrap;gap:4px 12px;align-items:baseline;border-left:8px solid var(--accent);background:var(--panel);padding:10px 14px;margin:0 0 12px}
+.donow.alert{border-left-color:var(--alert);background:#FDEEF1}.donow.warn{border-left-color:var(--warn);background:var(--warn-bg)}
+.donow .dn-label{font-size:.8125rem;font-weight:700;text-transform:none;color:var(--muted)}
+.donow b{font-size:1.0625rem}
+.signals{margin:14px 0 4px}.signals h3{margin:0 0 4px}
+.sig-row{display:grid;grid-template-columns:minmax(0,11rem) minmax(0,1fr);gap:8px 14px;padding:7px 0;border-top:1px solid var(--line);font-size:.9375rem}
+.sig-row.warn span:last-child{font-weight:700;border-left:4px solid var(--warn);padding-left:8px}
+@media(max-width:40em){.sig-row{grid-template-columns:1fr}}
+
+/* companion skills: guided taps, answer cards, one moment card */
+.skills{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.skillbtn{min-height:48px;padding:6px 12px;border:1px solid var(--accent);border-radius:10px;background:#fff;color:var(--accent);font-weight:600;font-size:1rem;cursor:pointer;text-align:start;transition:background-color .15s,transform .1s}
+.skillbtn:hover{background:#E9F3F2}.skillbtn:active{transform:scale(.98)}.skillbtn.small{min-height:44px;font-size:.9375rem;margin:4px 6px 0 0}
+.skillcards{display:flex;flex-direction:column;gap:8px;margin-top:8px}
+.skillcard{background:#fff;border:1px solid #E2D9CB;border-radius:12px;padding:10px 12px}
+.skillcard .sc-title{font-size:.8125rem;font-weight:700;color:var(--muted);margin-bottom:4px}
+.skillcard ul,.skillcard ol{margin:0;padding-inline-start:1.25rem}.skillcard li{margin:3px 0}.skillcard p{margin:0}
+.skillcard .draft{white-space:pre-line;border-inline-start:4px solid var(--accent);padding-inline-start:10px}
+.moment{border:1px solid #E7DFD3;border-radius:14px;background:#fff;padding:12px 14px;display:flex;flex-direction:column;gap:8px;width:100%}
+.moment-actions{display:flex;flex-wrap:wrap;gap:8px}.moment-actions .btn{min-height:48px;padding:0 16px}
+
+/* sheet polish: skills as one scrolling row, header dot hidden while the thread is open, tidy action rows */
+.skills{display:flex;flex-wrap:nowrap;overflow-x:auto;gap:8px;padding-bottom:4px;scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch}
+.skills .skillbtn{flex:0 0 auto;scroll-snap-align:start;white-space:nowrap}
+body.noscroll .notes{visibility:hidden}
+.ai-actions{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center}.ai-actions .skillbtn.small{margin:0}
+.sheet>*{flex-shrink:0}.sheet>.thread{flex:1 1 auto;min-height:6rem}
+.voicebox{border:1px solid #E7DFD3;border-radius:14px;overflow:hidden;background:#fff;margin:8px 0}
+.voicebox iframe{display:block;width:100%;height:30rem;border:0}
+
+/* booked step on a phone: keep greeting, Right now, ribbon and the ask bar on the first screen */
+@media(max-width:40em){
+  .phone .rn .reassure{display:none}
+  .phone .rn .band{padding:8px 12px;font-size:.9375rem;margin:4px 0 0}
+  .phone .rn-sentence{font-size:1rem}.phone .rn-today{padding-top:6px}.phone .rn-call{padding-top:8px}
+  body[data-as="patient"] .phone .greet{font-size:1.375rem}
+}
+@media(max-width:40em){.phone .rn .nextlbl{display:none}}

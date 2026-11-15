@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Hoitovirta · Pulse mock</title>
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+  <meta name="theme-color" content="#0F6E6A">
+  <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="./" aria-label="Hoitovirta Pulse mock">
+      <img class="logo" src="logo.svg" alt="" width="32" height="32"><span>Hoitovirta</span>
+    </a>
+    <div class="switches" aria-label="Language and view">
+      <label><span class="sr-only">Language</span><select id="language">
+        <option value="fi">Suomi</option><option value="sv">Svenska</option><option value="en">English</option>
+      </select></label>
+      <button id="screening-toggle" class="link-button" type="button">Tulevat ilmaiset seulonnat</button>
+      <button id="staff-toggle" class="link-button" type="button">Hoitotiimin näkymä</button>
+    </div>
+  </header>
+  <main>
+    <div class="prototype" id="proto-tag">MOCK · SYNTEETTINEN DATA</div>
+    <section id="patient-view" aria-live="polite">
+      <div class="progress"><span id="step-text">Kysymys 1 / 2 · noin 20 sekuntia</span><span class="track"><i></i></span></div>
+      <h1 id="title">Miten voit tänään?</h1>
+      <p id="intro" class="intro"></p>
+      <form id="survey">
+        <fieldset>
+          <legend><span id="q4"></span></legend>
+          <div class="choices" id="choices4"></div>
+        </fieldset>
+        <fieldset>
+          <legend><span id="q7"></span></legend>
+          <p id="scale" class="hint"></p>
+          <div class="scale" id="scale-options"></div>
+          <div class="scale-labels"><span id="scale-low"></span><span id="scale-high"></span></div>
+        </fieldset>
+        <p class="threshold-note" id="threshold-note"></p>
+        <p class="source-note patient-source"><span id="source-label"></span> <a id="patient-source-link" target="_blank" rel="noopener noreferrer"></a></p>
+        <p class="privacy" id="privacy"></p>
+        <button class="primary" id="submit" type="submit"></button>
+      </form>
+      <div id="result" class="result" hidden></div>
+    </section>
+    <section id="screening-view" hidden></section>
+    <section id="staff-view" hidden>
+      <h1 id="staff-title"></h1>
+      <p id="staff-subtitle" class="intro"></p>
+      <div id="metrics" class="metrics"></div>
+      <div id="queue"></div>
+      <div class="source-note"><span>Worry cut-off</span> <a id="source-link" target="_blank" rel="noopener noreferrer">NCCN source</a></div>
+    </section>
+  </main>
+  <footer><span id="footer-copy">Prototyyppi · synteettinen data</span><a href="../">← Hoitovirta</a></footer>
+  <script src="static/app.js" defer></script>
+  <script src="static/screening.js" defer></script>
+</body>
+</html>

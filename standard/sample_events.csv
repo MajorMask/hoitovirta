@@ -1,0 +1,425 @@
+pathway_id,event_type,ts,value,unit,patient_name,age,sex,language,county,cancer
+PW-0001,T0,2026-08-20T10:40:48Z,Breast lump,flag,Sari V.,47,f,fi,Länsi-Uusimaa,breast
+PW-0001,T1,2026-09-02T03:26:19Z,Referral sent,,Sari V.,47,f,fi,Länsi-Uusimaa,breast
+PW-0001,T2,2026-09-04T05:56:45Z,Referral received,,Sari V.,47,f,fi,Länsi-Uusimaa,breast
+PW-0001,coordinator,2026-09-04T05:56:45Z,Laura,,Sari V.,47,f,fi,Länsi-Uusimaa,breast
+PW-0001,T3,2026-09-14T04:26:21Z,Recall imaging,,Sari V.,47,f,fi,Länsi-Uusimaa,breast
+PW-0001,T4,2026-09-19T07:02:39Z,Diagnosis,,Sari V.,47,f,fi,Länsi-Uusimaa,breast
+PW-0001,stage,2026-09-19T07:02:39Z,unknown,,Sari V.,47,f,fi,Länsi-Uusimaa,breast
+PW-0001,T5,2026-09-25T20:51:50Z,MDT,,Sari V.,47,f,fi,Länsi-Uusimaa,breast
+PW-0001,T6,2026-10-12T13:39:47Z,Treatment,,Sari V.,47,f,fi,Länsi-Uusimaa,breast
+PW-0002,T0,2026-10-30T05:26:41Z,Positive FIT,flag,Antti H.,58,m,fi,Länsi-Uusimaa,colorectal
+PW-0002,coordinator,2026-10-30T05:26:41Z,Aisha,,Antti H.,58,m,fi,Länsi-Uusimaa,colorectal
+PW-0002,T1,2026-11-04T01:07:09Z,Referral sent,,Antti H.,58,m,fi,Länsi-Uusimaa,colorectal
+PW-0002,T2,2026-11-05T12:24:57Z,Referral received,,Antti H.,58,m,fi,Länsi-Uusimaa,colorectal
+PW-0003,T0,2026-11-06T05:50:46Z,Nodule on X-ray or CT,flag,Päivi H.,56,f,fi,Länsi-Uusimaa,lung
+PW-0003,coordinator,2026-11-06T05:50:46Z,Mikko,,Päivi H.,56,f,fi,Länsi-Uusimaa,lung
+PW-0004,T0,2026-08-14T19:53:23Z,Cough over 3 weeks,flag,Pekka P.,58,m,fi,Länsi-Uusimaa,lung
+PW-0004,T1,2026-09-20T00:02:30Z,Referral sent,,Pekka P.,58,m,fi,Länsi-Uusimaa,lung
+PW-0004,T2,2026-09-22T11:17:30Z,Referral received,,Pekka P.,58,m,fi,Länsi-Uusimaa,lung
+PW-0004,coordinator,2026-09-22T11:17:30Z,Laura,,Pekka P.,58,m,fi,Länsi-Uusimaa,lung
+PW-0004,T3,2026-10-29T04:40:54Z,CT scan,,Pekka P.,58,m,fi,Länsi-Uusimaa,lung
+PW-0004,T4,2026-11-07T10:05:07Z,Diagnosis,,Pekka P.,58,m,fi,Länsi-Uusimaa,lung
+PW-0004,stage,2026-11-07T10:05:07Z,IV,,Pekka P.,58,m,fi,Länsi-Uusimaa,lung
+PW-0005,T0,2026-08-31T14:52:08Z,Change in bowel habit,flag,Riitta L.,73,f,fi,Länsi-Uusimaa,colorectal
+PW-0005,g8,2026-08-31T14:52:08Z,13,score,Riitta L.,73,f,fi,Länsi-Uusimaa,colorectal
+PW-0005,T1,2026-09-07T22:14:36Z,Referral sent,,Riitta L.,73,f,fi,Länsi-Uusimaa,colorectal
+PW-0005,T2,2026-09-09T08:59:23Z,Referral received,,Riitta L.,73,f,fi,Länsi-Uusimaa,colorectal
+PW-0005,coordinator,2026-09-09T08:59:23Z,Mikko,,Riitta L.,73,f,fi,Länsi-Uusimaa,colorectal
+PW-0005,T3,2026-09-22T13:47:46Z,Colonoscopy,,Riitta L.,73,f,fi,Länsi-Uusimaa,colorectal
+PW-0005,T4,2026-09-29T06:06:03Z,Diagnosis,,Riitta L.,73,f,fi,Länsi-Uusimaa,colorectal
+PW-0005,stage,2026-09-29T06:06:03Z,III,,Riitta L.,73,f,fi,Länsi-Uusimaa,colorectal
+PW-0005,T5,2026-10-16T04:55:34Z,MDT,,Riitta L.,73,f,fi,Länsi-Uusimaa,colorectal
+PW-0005,T6,2026-10-28T03:33:25Z,Treatment,,Riitta L.,73,f,fi,Länsi-Uusimaa,colorectal
+PW-0006,T0,2026-08-26T22:14:30Z,Coughing blood,flag,Liisa J.,73,f,fi,Länsi-Uusimaa,lung
+PW-0006,g8,2026-08-26T22:14:30Z,16,score,Liisa J.,73,f,fi,Länsi-Uusimaa,lung
+PW-0006,T1,2026-09-16T02:28:21Z,Referral sent,,Liisa J.,73,f,fi,Länsi-Uusimaa,lung
+PW-0006,T2,2026-09-19T02:20:46Z,Referral received,,Liisa J.,73,f,fi,Länsi-Uusimaa,lung
+PW-0006,coordinator,2026-09-19T02:20:46Z,Aisha,,Liisa J.,73,f,fi,Länsi-Uusimaa,lung
+PW-0006,T3,2026-10-07T03:03:07Z,CT scan,,Liisa J.,73,f,fi,Länsi-Uusimaa,lung
+PW-0006,T4,2026-10-25T00:41:40Z,Diagnosis,,Liisa J.,73,f,fi,Länsi-Uusimaa,lung
+PW-0006,stage,2026-10-25T00:41:40Z,unknown,,Liisa J.,73,f,fi,Länsi-Uusimaa,lung
+PW-0006,T5,2026-11-05T12:14:59Z,MDT,,Liisa J.,73,f,fi,Länsi-Uusimaa,lung
+PW-0007,T0,2026-09-07T14:24:17Z,Change in bowel habit,flag,Pekka E.,66,m,fi,Länsi-Uusimaa,colorectal
+PW-0007,g8,2026-09-07T14:24:17Z,15,score,Pekka E.,66,m,fi,Länsi-Uusimaa,colorectal
+PW-0007,T1,2026-09-26T01:00:19Z,Referral sent,,Pekka E.,66,m,fi,Länsi-Uusimaa,colorectal
+PW-0007,T2,2026-09-27T15:59:47Z,Referral received,,Pekka E.,66,m,fi,Länsi-Uusimaa,colorectal
+PW-0007,coordinator,2026-09-27T15:59:47Z,Laura,,Pekka E.,66,m,fi,Länsi-Uusimaa,colorectal
+PW-0007,T3,2026-10-09T13:03:03Z,Colonoscopy,,Pekka E.,66,m,fi,Länsi-Uusimaa,colorectal
+PW-0007,T4,2026-10-16T23:45:12Z,Diagnosis,,Pekka E.,66,m,fi,Länsi-Uusimaa,colorectal
+PW-0007,stage,2026-10-16T23:45:12Z,unknown,,Pekka E.,66,m,fi,Länsi-Uusimaa,colorectal
+PW-0007,T5,2026-10-22T02:17:53Z,MDT,,Pekka E.,66,m,fi,Länsi-Uusimaa,colorectal
+PW-0007,T6,2026-11-02T20:44:33Z,Treatment,,Pekka E.,66,m,fi,Länsi-Uusimaa,colorectal
+PW-0008,T0,2026-11-02T17:12:22Z,Positive FIT,flag,Hassan P.,67,m,ar,Länsi-Uusimaa,colorectal
+PW-0008,g8,2026-11-02T17:12:22Z,15,score,Hassan P.,67,m,ar,Länsi-Uusimaa,colorectal
+PW-0008,coordinator,2026-11-02T17:12:22Z,Mikko,,Hassan P.,67,m,ar,Länsi-Uusimaa,colorectal
+PW-0008,T1,2026-11-07T01:17:37Z,Referral sent,,Hassan P.,67,m,ar,Länsi-Uusimaa,colorectal
+PW-0008,T2,2026-11-08T16:39:13Z,Referral received,,Hassan P.,67,m,ar,Länsi-Uusimaa,colorectal
+PW-0008,T3,2026-11-14T03:45:07Z,Colonoscopy,,Hassan P.,67,m,ar,Länsi-Uusimaa,colorectal
+PW-0009,T0,2026-06-25T14:39:36Z,Positive FIT,flag,Hannu S.,65,m,fi,Länsi-Uusimaa,colorectal
+PW-0009,g8,2026-06-25T14:39:36Z,14,score,Hannu S.,65,m,fi,Länsi-Uusimaa,colorectal
+PW-0009,T1,2026-07-01T08:17:13Z,Referral sent,,Hannu S.,65,m,fi,Länsi-Uusimaa,colorectal
+PW-0009,T2,2026-07-07T09:26:24Z,Referral received,,Hannu S.,65,m,fi,Länsi-Uusimaa,colorectal
+PW-0009,coordinator,2026-07-07T09:26:24Z,Aisha,,Hannu S.,65,m,fi,Länsi-Uusimaa,colorectal
+PW-0009,T3,2026-08-07T03:09:12Z,Colonoscopy,,Hannu S.,65,m,fi,Länsi-Uusimaa,colorectal
+PW-0009,T4,2026-08-20T07:04:28Z,Diagnosis,,Hannu S.,65,m,fi,Länsi-Uusimaa,colorectal
+PW-0009,stage,2026-08-20T07:04:28Z,unknown,,Hannu S.,65,m,fi,Länsi-Uusimaa,colorectal
+PW-0009,T5,2026-09-01T14:24:44Z,MDT,,Hannu S.,65,m,fi,Länsi-Uusimaa,colorectal
+PW-0009,T6,2026-09-16T07:48:22Z,Treatment,,Hannu S.,65,m,fi,Länsi-Uusimaa,colorectal
+PW-0010,T0,2026-07-14T12:01:43Z,Breast lump,flag,Riitta H.,46,f,fi,Länsi-Uusimaa,breast
+PW-0010,T1,2026-07-20T20:39:04Z,Referral sent,,Riitta H.,46,f,fi,Länsi-Uusimaa,breast
+PW-0010,T2,2026-07-28T13:43:55Z,Referral received,,Riitta H.,46,f,fi,Länsi-Uusimaa,breast
+PW-0010,coordinator,2026-07-28T13:43:55Z,Laura,,Riitta H.,46,f,fi,Länsi-Uusimaa,breast
+PW-0010,T3,2026-08-04T14:40:05Z,Recall imaging,,Riitta H.,46,f,fi,Länsi-Uusimaa,breast
+PW-0010,T4,2026-08-13T23:29:36Z,Diagnosis,,Riitta H.,46,f,fi,Länsi-Uusimaa,breast
+PW-0010,stage,2026-08-13T23:29:36Z,unknown,,Riitta H.,46,f,fi,Länsi-Uusimaa,breast
+PW-0010,T5,2026-08-27T02:26:15Z,MDT,,Riitta H.,46,f,fi,Länsi-Uusimaa,breast
+PW-0010,T6,2026-09-19T01:03:16Z,Treatment,,Riitta H.,46,f,fi,Länsi-Uusimaa,breast
+PW-0011,T0,2026-09-30T11:22:17Z,Breast lump,flag,Olga M.,50,f,ru,Länsi-Uusimaa,breast
+PW-0011,coordinator,2026-09-30T11:22:17Z,Mikko,,Olga M.,50,f,ru,Länsi-Uusimaa,breast
+PW-0011,T1,2026-10-19T02:50:35Z,Referral sent,,Olga M.,50,f,ru,Länsi-Uusimaa,breast
+PW-0011,T2,2026-10-22T14:09:08Z,Referral received,,Olga M.,50,f,ru,Länsi-Uusimaa,breast
+PW-0012,T0,2026-10-31T10:56:10Z,Positive FIT,flag,Anders E.,63,m,sv,Länsi-Uusimaa,colorectal
+PW-0012,coordinator,2026-10-31T10:56:10Z,Aisha,,Anders E.,63,m,sv,Länsi-Uusimaa,colorectal
+PW-0012,T1,2026-11-07T19:50:45Z,Referral sent,,Anders E.,63,m,sv,Länsi-Uusimaa,colorectal
+PW-0012,T2,2026-11-09T13:20:32Z,Referral received,,Anders E.,63,m,sv,Länsi-Uusimaa,colorectal
+PW-0013,T0,2026-08-20T15:36:23Z,Weight loss,flag,Natalia A.,64,f,ru,Länsi-Uusimaa,lung
+PW-0013,T1,2026-09-17T00:54:51Z,Referral sent,,Natalia A.,64,f,ru,Länsi-Uusimaa,lung
+PW-0013,T2,2026-09-18T22:19:31Z,Referral received,,Natalia A.,64,f,ru,Länsi-Uusimaa,lung
+PW-0013,coordinator,2026-09-18T22:19:31Z,Laura,,Natalia A.,64,f,ru,Länsi-Uusimaa,lung
+PW-0013,T3,2026-10-04T19:35:23Z,CT scan,,Natalia A.,64,f,ru,Länsi-Uusimaa,lung
+PW-0013,T4,2026-10-13T17:56:52Z,Diagnosis,,Natalia A.,64,f,ru,Länsi-Uusimaa,lung
+PW-0013,stage,2026-10-13T17:56:52Z,III,,Natalia A.,64,f,ru,Länsi-Uusimaa,lung
+PW-0013,T5,2026-10-25T06:58:38Z,MDT,,Natalia A.,64,f,ru,Länsi-Uusimaa,lung
+PW-0014,T0,2026-09-12T06:17:16Z,Coughing blood,flag,Svetlana T.,82,f,ru,Länsi-Uusimaa,lung
+PW-0014,g8,2026-09-12T06:17:16Z,16,score,Svetlana T.,82,f,ru,Länsi-Uusimaa,lung
+PW-0014,T1,2026-10-04T09:54:17Z,Referral sent,,Svetlana T.,82,f,ru,Länsi-Uusimaa,lung
+PW-0014,T2,2026-10-06T05:40:19Z,Referral received,,Svetlana T.,82,f,ru,Länsi-Uusimaa,lung
+PW-0014,coordinator,2026-10-06T05:40:19Z,Mikko,,Svetlana T.,82,f,ru,Länsi-Uusimaa,lung
+PW-0014,T3,2026-10-13T17:19:17Z,CT scan,,Svetlana T.,82,f,ru,Länsi-Uusimaa,lung
+PW-0014,T4,2026-10-30T14:47:03Z,Diagnosis,,Svetlana T.,82,f,ru,Länsi-Uusimaa,lung
+PW-0014,stage,2026-10-30T14:47:03Z,unknown,,Svetlana T.,82,f,ru,Länsi-Uusimaa,lung
+PW-0015,T0,2026-09-20T13:57:39Z,Positive FIT,flag,Helena E.,70,f,fi,Länsi-Uusimaa,colorectal
+PW-0015,g8,2026-09-20T13:57:39Z,9,score,Helena E.,70,f,fi,Länsi-Uusimaa,colorectal
+PW-0015,coordinator,2026-09-20T13:57:39Z,Laura,,Helena E.,70,f,fi,Länsi-Uusimaa,colorectal
+PW-0015,T1,2026-10-05T00:58:15Z,Referral sent,,Helena E.,70,f,fi,Länsi-Uusimaa,colorectal
+PW-0015,T2,2026-10-07T00:59:38Z,Referral received,,Helena E.,70,f,fi,Länsi-Uusimaa,colorectal
+PW-0015,T3,2026-10-18T06:24:09Z,Colonoscopy,,Helena E.,70,f,fi,Länsi-Uusimaa,colorectal
+PW-0015,T4,2026-10-28T09:50:00Z,Diagnosis,,Helena E.,70,f,fi,Länsi-Uusimaa,colorectal
+PW-0015,stage,2026-10-28T09:50:00Z,unknown,,Helena E.,70,f,fi,Länsi-Uusimaa,colorectal
+PW-0015,T5,2026-11-05T21:15:09Z,MDT,,Helena E.,70,f,fi,Länsi-Uusimaa,colorectal
+PW-0016,T0,2026-10-11T14:03:29Z,Coughing blood,flag,Matti V.,57,m,fi,Länsi-Uusimaa,lung
+PW-0016,coordinator,2026-10-11T14:03:29Z,Aisha,,Matti V.,57,m,fi,Länsi-Uusimaa,lung
+PW-0016,T1,2026-11-10T06:10:28Z,Referral sent,,Matti V.,57,m,fi,Länsi-Uusimaa,lung
+PW-0016,T2,2026-11-12T14:10:35Z,Referral received,,Matti V.,57,m,fi,Länsi-Uusimaa,lung
+PW-0017,T0,2026-08-28T01:08:16Z,Abnormal blood count,flag,Juha V.,52,m,fi,Länsi-Uusimaa,haematological
+PW-0017,T1,2026-10-14T11:51:49Z,Referral sent,,Juha V.,52,m,fi,Länsi-Uusimaa,haematological
+PW-0017,T2,2026-10-22T04:24:25Z,Referral received,,Juha V.,52,m,fi,Länsi-Uusimaa,haematological
+PW-0017,coordinator,2026-10-22T04:24:25Z,Mikko,,Juha V.,52,m,fi,Länsi-Uusimaa,haematological
+PW-0017,T3,2026-10-28T10:48:05Z,SPEP + FLC blood test,,Juha V.,52,m,fi,Länsi-Uusimaa,haematological
+PW-0017,T4,2026-11-03T13:04:20Z,Diagnosis,,Juha V.,52,m,fi,Länsi-Uusimaa,haematological
+PW-0017,stage,2026-11-03T13:04:20Z,II,,Juha V.,52,m,fi,Länsi-Uusimaa,haematological
+PW-0017,T5,2026-11-11T04:35:06Z,MDT,,Juha V.,52,m,fi,Länsi-Uusimaa,haematological
+PW-0018,T0,2026-07-04T20:41:37Z,Breast lump,flag,Tuula J.,68,f,fi,Länsi-Uusimaa,breast
+PW-0018,g8,2026-07-04T20:41:37Z,15,score,Tuula J.,68,f,fi,Länsi-Uusimaa,breast
+PW-0018,T1,2026-07-13T04:24:52Z,Referral sent,,Tuula J.,68,f,fi,Länsi-Uusimaa,breast
+PW-0018,T2,2026-07-16T11:30:32Z,Referral received,,Tuula J.,68,f,fi,Länsi-Uusimaa,breast
+PW-0018,coordinator,2026-07-16T11:30:32Z,Aisha,,Tuula J.,68,f,fi,Länsi-Uusimaa,breast
+PW-0018,T3,2026-07-24T22:18:37Z,Recall imaging,,Tuula J.,68,f,fi,Länsi-Uusimaa,breast
+PW-0018,T4,2026-07-29T04:06:16Z,Diagnosis,,Tuula J.,68,f,fi,Länsi-Uusimaa,breast
+PW-0018,stage,2026-07-29T04:06:16Z,II,,Tuula J.,68,f,fi,Länsi-Uusimaa,breast
+PW-0018,T5,2026-08-01T23:38:05Z,MDT,,Tuula J.,68,f,fi,Länsi-Uusimaa,breast
+PW-0018,T6,2026-08-15T15:38:48Z,Treatment,,Tuula J.,68,f,fi,Länsi-Uusimaa,breast
+PW-0019,T0,2026-07-25T22:55:07Z,"Back or bone pain, 3rd visit",flag,Sari J.,78,f,fi,Länsi-Uusimaa,haematological
+PW-0019,g8,2026-07-25T22:55:07Z,9,score,Sari J.,78,f,fi,Länsi-Uusimaa,haematological
+PW-0019,T1,2026-09-05T08:15:47Z,Referral sent,,Sari J.,78,f,fi,Länsi-Uusimaa,haematological
+PW-0019,T2,2026-09-09T11:07:22Z,Referral received,,Sari J.,78,f,fi,Länsi-Uusimaa,haematological
+PW-0019,coordinator,2026-09-09T11:07:22Z,Laura,,Sari J.,78,f,fi,Länsi-Uusimaa,haematological
+PW-0019,T3,2026-10-22T11:18:58Z,SPEP + FLC blood test,,Sari J.,78,f,fi,Länsi-Uusimaa,haematological
+PW-0019,T4,2026-11-03T21:43:19Z,Diagnosis,,Sari J.,78,f,fi,Länsi-Uusimaa,haematological
+PW-0019,stage,2026-11-03T21:43:19Z,III,,Sari J.,78,f,fi,Länsi-Uusimaa,haematological
+PW-0019,T5,2026-11-12T20:17:17Z,MDT,,Sari J.,78,f,fi,Länsi-Uusimaa,haematological
+PW-0020,T0,2026-07-07T14:52:43Z,Urinary symptoms,flag,Eero H.,75,m,fi,Länsi-Uusimaa,prostate
+PW-0020,g8,2026-07-07T14:52:43Z,17,score,Eero H.,75,m,fi,Länsi-Uusimaa,prostate
+PW-0020,T1,2026-08-22T14:50:09Z,Referral sent,,Eero H.,75,m,fi,Länsi-Uusimaa,prostate
+PW-0020,T2,2026-08-25T15:09:55Z,Referral received,,Eero H.,75,m,fi,Länsi-Uusimaa,prostate
+PW-0020,coordinator,2026-08-25T15:09:55Z,Mikko,,Eero H.,75,m,fi,Länsi-Uusimaa,prostate
+PW-0020,T3,2026-10-10T08:03:50Z,MRI,,Eero H.,75,m,fi,Länsi-Uusimaa,prostate
+PW-0020,T4,2026-10-13T01:27:59Z,Diagnosis,,Eero H.,75,m,fi,Länsi-Uusimaa,prostate
+PW-0020,stage,2026-10-13T01:27:59Z,III,,Eero H.,75,m,fi,Länsi-Uusimaa,prostate
+PW-0020,T5,2026-10-18T05:52:21Z,MDT,,Eero H.,75,m,fi,Länsi-Uusimaa,prostate
+PW-0020,T6,2026-11-12T21:55:28Z,Treatment,,Eero H.,75,m,fi,Länsi-Uusimaa,prostate
+PW-0021,T0,2026-07-20T10:05:40Z,Urinary symptoms,flag,Mohamed N.,61,m,so,Länsi-Uusimaa,prostate
+PW-0021,T1,2026-08-17T06:26:39Z,Referral sent,,Mohamed N.,61,m,so,Länsi-Uusimaa,prostate
+PW-0021,T2,2026-08-20T02:10:03Z,Referral received,,Mohamed N.,61,m,so,Länsi-Uusimaa,prostate
+PW-0021,coordinator,2026-08-20T02:10:03Z,Aisha,,Mohamed N.,61,m,so,Länsi-Uusimaa,prostate
+PW-0021,T3,2026-08-31T08:50:22Z,MRI,,Mohamed N.,61,m,so,Länsi-Uusimaa,prostate
+PW-0021,T4,2026-09-08T16:22:42Z,Diagnosis,,Mohamed N.,61,m,so,Länsi-Uusimaa,prostate
+PW-0021,stage,2026-09-08T16:22:42Z,unknown,,Mohamed N.,61,m,so,Länsi-Uusimaa,prostate
+PW-0021,T5,2026-09-10T19:26:23Z,MDT,,Mohamed N.,61,m,so,Länsi-Uusimaa,prostate
+PW-0021,T6,2026-10-03T03:20:09Z,Treatment,,Mohamed N.,61,m,so,Länsi-Uusimaa,prostate
+PW-0022,T0,2026-06-17T15:55:58Z,Abnormal mammogram,flag,Tuula T.,59,f,fi,Länsi-Uusimaa,breast
+PW-0022,T1,2026-07-06T19:00:08Z,Referral sent,,Tuula T.,59,f,fi,Länsi-Uusimaa,breast
+PW-0022,T2,2026-07-09T14:58:37Z,Referral received,,Tuula T.,59,f,fi,Länsi-Uusimaa,breast
+PW-0022,coordinator,2026-07-09T14:58:37Z,Laura,,Tuula T.,59,f,fi,Länsi-Uusimaa,breast
+PW-0022,T3,2026-08-11T04:49:22Z,Recall imaging,,Tuula T.,59,f,fi,Länsi-Uusimaa,breast
+PW-0022,T4,2026-08-22T21:57:28Z,Diagnosis,,Tuula T.,59,f,fi,Länsi-Uusimaa,breast
+PW-0022,stage,2026-08-22T21:57:28Z,unknown,,Tuula T.,59,f,fi,Länsi-Uusimaa,breast
+PW-0022,T5,2026-08-30T17:55:54Z,MDT,,Tuula T.,59,f,fi,Länsi-Uusimaa,breast
+PW-0022,T6,2026-09-20T20:19:20Z,Treatment,,Tuula T.,59,f,fi,Länsi-Uusimaa,breast
+PW-0023,T0,2026-09-20T22:47:58Z,Breast lump,flag,Helena H.,60,f,fi,Länsi-Uusimaa,breast
+PW-0023,coordinator,2026-09-20T22:47:58Z,Aisha,,Helena H.,60,f,fi,Länsi-Uusimaa,breast
+PW-0023,T1,2026-09-27T15:55:50Z,Referral sent,,Helena H.,60,f,fi,Länsi-Uusimaa,breast
+PW-0023,T2,2026-09-30T03:37:46Z,Referral received,,Helena H.,60,f,fi,Länsi-Uusimaa,breast
+PW-0023,T3,2026-10-08T13:19:56Z,Recall imaging,,Helena H.,60,f,fi,Länsi-Uusimaa,breast
+PW-0023,T4,2026-10-17T10:29:58Z,Diagnosis,,Helena H.,60,f,fi,Länsi-Uusimaa,breast
+PW-0023,stage,2026-10-17T10:29:58Z,I,,Helena H.,60,f,fi,Länsi-Uusimaa,breast
+PW-0023,T5,2026-10-22T06:35:23Z,MDT,,Helena H.,60,f,fi,Länsi-Uusimaa,breast
+PW-0023,T6,2026-11-07T07:46:08Z,Treatment,,Helena H.,60,f,fi,Länsi-Uusimaa,breast
+PW-0024,T0,2026-09-12T20:57:12Z,Rectal bleeding,flag,Juha W.,59,m,fi,Länsi-Uusimaa,colorectal
+PW-0024,T1,2026-09-25T12:16:45Z,Referral sent,,Juha W.,59,m,fi,Länsi-Uusimaa,colorectal
+PW-0024,T2,2026-09-28T21:27:33Z,Referral received,,Juha W.,59,m,fi,Länsi-Uusimaa,colorectal
+PW-0024,coordinator,2026-09-28T21:27:33Z,Aisha,,Juha W.,59,m,fi,Länsi-Uusimaa,colorectal
+PW-0024,T3,2026-10-11T06:59:48Z,Colonoscopy,,Juha W.,59,m,fi,Länsi-Uusimaa,colorectal
+PW-0024,T4,2026-10-16T06:03:14Z,Diagnosis,,Juha W.,59,m,fi,Länsi-Uusimaa,colorectal
+PW-0024,stage,2026-10-16T06:03:14Z,unknown,,Juha W.,59,m,fi,Länsi-Uusimaa,colorectal
+PW-0024,T5,2026-10-28T02:54:09Z,MDT,,Juha W.,59,m,fi,Länsi-Uusimaa,colorectal
+PW-0025,T0,2026-06-16T05:02:19Z,Urinary symptoms,flag,Eero T.,57,m,fi,Länsi-Uusimaa,prostate
+PW-0025,T1,2026-07-10T06:19:13Z,Referral sent,,Eero T.,57,m,fi,Länsi-Uusimaa,prostate
+PW-0025,T2,2026-07-13T12:04:20Z,Referral received,,Eero T.,57,m,fi,Länsi-Uusimaa,prostate
+PW-0025,coordinator,2026-07-13T12:04:20Z,Laura,,Eero T.,57,m,fi,Länsi-Uusimaa,prostate
+PW-0025,T3,2026-08-09T19:16:48Z,MRI,,Eero T.,57,m,fi,Länsi-Uusimaa,prostate
+PW-0025,T4,2026-09-02T21:13:24Z,Diagnosis,,Eero T.,57,m,fi,Länsi-Uusimaa,prostate
+PW-0025,stage,2026-09-02T21:13:24Z,unknown,,Eero T.,57,m,fi,Länsi-Uusimaa,prostate
+PW-0025,T5,2026-09-06T18:46:28Z,MDT,,Eero T.,57,m,fi,Länsi-Uusimaa,prostate
+PW-0025,T6,2026-09-23T05:43:08Z,Treatment,,Eero T.,57,m,fi,Länsi-Uusimaa,prostate
+PW-0026,T0,2026-10-20T14:48:52Z,Change in bowel habit,flag,Anna A.,60,f,fi,Länsi-Uusimaa,colorectal
+PW-0026,coordinator,2026-10-20T14:48:52Z,Aisha,,Anna A.,60,f,fi,Länsi-Uusimaa,colorectal
+PW-0026,T1,2026-10-26T03:11:30Z,Referral sent,,Anna A.,60,f,fi,Länsi-Uusimaa,colorectal
+PW-0026,T2,2026-10-27T09:21:17Z,Referral received,,Anna A.,60,f,fi,Länsi-Uusimaa,colorectal
+PW-0026,T3,2026-11-11T14:40:12Z,Colonoscopy,,Anna A.,60,f,fi,Länsi-Uusimaa,colorectal
+PW-0027,T0,2026-11-10T05:57:21Z,Nodule on X-ray or CT,flag,Ali N.,59,m,so,Länsi-Uusimaa,lung
+PW-0027,coordinator,2026-11-10T05:57:21Z,Aisha,,Ali N.,59,m,so,Länsi-Uusimaa,lung
+PW-0028,T0,2026-11-09T04:46:54Z,Cough over 3 weeks,flag,Mariam H.,82,f,ar,Länsi-Uusimaa,lung
+PW-0028,g8,2026-11-09T04:46:54Z,11,score,Mariam H.,82,f,ar,Länsi-Uusimaa,lung
+PW-0028,coordinator,2026-11-09T04:46:54Z,Mikko,,Mariam H.,82,f,ar,Länsi-Uusimaa,lung
+PW-0029,T0,2026-06-21T22:58:50Z,Raised PSA,flag,Antti A.,59,m,fi,Länsi-Uusimaa,prostate
+PW-0029,T1,2026-07-11T14:33:37Z,Referral sent,,Antti A.,59,m,fi,Länsi-Uusimaa,prostate
+PW-0029,T2,2026-07-16T03:43:46Z,Referral received,,Antti A.,59,m,fi,Länsi-Uusimaa,prostate
+PW-0029,coordinator,2026-07-16T03:43:46Z,Mikko,,Antti A.,59,m,fi,Länsi-Uusimaa,prostate
+PW-0029,T3,2026-08-02T08:30:27Z,MRI,,Antti A.,59,m,fi,Länsi-Uusimaa,prostate
+PW-0029,T4,2026-08-21T14:42:27Z,Diagnosis,,Antti A.,59,m,fi,Länsi-Uusimaa,prostate
+PW-0029,stage,2026-08-21T14:42:27Z,unknown,,Antti A.,59,m,fi,Länsi-Uusimaa,prostate
+PW-0029,T5,2026-08-29T10:39:17Z,MDT,,Antti A.,59,m,fi,Länsi-Uusimaa,prostate
+PW-0029,T6,2026-10-02T15:02:24Z,Treatment,,Antti A.,59,m,fi,Länsi-Uusimaa,prostate
+PW-0030,T0,2026-06-27T20:58:46Z,Rectal bleeding,flag,David E.,73,m,en,Länsi-Uusimaa,colorectal
+PW-0030,g8,2026-06-27T20:58:46Z,8,score,David E.,73,m,en,Länsi-Uusimaa,colorectal
+PW-0030,T1,2026-07-15T06:10:27Z,Referral sent,,David E.,73,m,en,Länsi-Uusimaa,colorectal
+PW-0030,T2,2026-07-17T04:35:00Z,Referral received,,David E.,73,m,en,Länsi-Uusimaa,colorectal
+PW-0030,coordinator,2026-07-17T04:35:00Z,Aisha,,David E.,73,m,en,Länsi-Uusimaa,colorectal
+PW-0030,T3,2026-07-25T05:16:35Z,Colonoscopy,,David E.,73,m,en,Länsi-Uusimaa,colorectal
+PW-0030,T4,2026-08-02T05:32:21Z,Diagnosis,,David E.,73,m,en,Länsi-Uusimaa,colorectal
+PW-0030,stage,2026-08-02T05:32:21Z,III,,David E.,73,m,en,Länsi-Uusimaa,colorectal
+PW-0030,T5,2026-08-10T01:23:11Z,MDT,,David E.,73,m,en,Länsi-Uusimaa,colorectal
+PW-0030,T6,2026-08-27T18:28:58Z,Treatment,,David E.,73,m,en,Länsi-Uusimaa,colorectal
+PW-0031,T0,2026-08-17T04:05:41Z,Raised PSA,flag,Pekka P.,70,m,fi,Länsi-Uusimaa,prostate
+PW-0031,g8,2026-08-17T04:05:41Z,9,score,Pekka P.,70,m,fi,Länsi-Uusimaa,prostate
+PW-0031,T1,2026-08-28T05:56:43Z,Referral sent,,Pekka P.,70,m,fi,Länsi-Uusimaa,prostate
+PW-0031,T2,2026-09-03T11:45:54Z,Referral received,,Pekka P.,70,m,fi,Länsi-Uusimaa,prostate
+PW-0031,coordinator,2026-09-03T11:45:54Z,Laura,,Pekka P.,70,m,fi,Länsi-Uusimaa,prostate
+PW-0031,T3,2026-09-18T07:32:33Z,MRI,,Pekka P.,70,m,fi,Länsi-Uusimaa,prostate
+PW-0031,T4,2026-10-06T02:01:26Z,Diagnosis,,Pekka P.,70,m,fi,Länsi-Uusimaa,prostate
+PW-0031,stage,2026-10-06T02:01:26Z,I,,Pekka P.,70,m,fi,Länsi-Uusimaa,prostate
+PW-0031,T5,2026-10-16T15:33:32Z,MDT,,Pekka P.,70,m,fi,Länsi-Uusimaa,prostate
+PW-0031,T6,2026-11-04T04:32:20Z,Treatment,,Pekka P.,70,m,fi,Länsi-Uusimaa,prostate
+PW-0032,T0,2026-11-06T22:34:29Z,Positive FIT,flag,Noor H.,57,f,ar,Länsi-Uusimaa,colorectal
+PW-0032,coordinator,2026-11-06T22:34:29Z,Mikko,,Noor H.,57,f,ar,Länsi-Uusimaa,colorectal
+PW-0033,T0,2026-08-24T05:11:51Z,Weight loss,flag,Svetlana P.,65,f,ru,Länsi-Uusimaa,lung
+PW-0033,g8,2026-08-24T05:11:51Z,17,score,Svetlana P.,65,f,ru,Länsi-Uusimaa,lung
+PW-0033,T1,2026-11-03T15:04:51Z,Referral sent,,Svetlana P.,65,f,ru,Länsi-Uusimaa,lung
+PW-0033,T2,2026-11-05T05:47:47Z,Referral received,,Svetlana P.,65,f,ru,Länsi-Uusimaa,lung
+PW-0033,coordinator,2026-11-05T05:47:47Z,Aisha,,Svetlana P.,65,f,ru,Länsi-Uusimaa,lung
+PW-0034,T0,2026-07-03T02:09:59Z,Positive FIT,flag,Marjatta W.,73,f,fi,Länsi-Uusimaa,colorectal
+PW-0034,g8,2026-07-03T02:09:59Z,11,score,Marjatta W.,73,f,fi,Länsi-Uusimaa,colorectal
+PW-0034,T1,2026-07-16T21:50:32Z,Referral sent,,Marjatta W.,73,f,fi,Länsi-Uusimaa,colorectal
+PW-0034,T2,2026-07-19T20:41:03Z,Referral received,,Marjatta W.,73,f,fi,Länsi-Uusimaa,colorectal
+PW-0034,coordinator,2026-07-19T20:41:03Z,Laura,,Marjatta W.,73,f,fi,Länsi-Uusimaa,colorectal
+PW-0034,T3,2026-07-31T10:11:55Z,Colonoscopy,,Marjatta W.,73,f,fi,Länsi-Uusimaa,colorectal
+PW-0034,T4,2026-08-10T02:48:09Z,Diagnosis,,Marjatta W.,73,f,fi,Länsi-Uusimaa,colorectal
+PW-0034,stage,2026-08-10T02:48:09Z,III,,Marjatta W.,73,f,fi,Länsi-Uusimaa,colorectal
+PW-0034,T5,2026-08-12T07:30:47Z,MDT,,Marjatta W.,73,f,fi,Länsi-Uusimaa,colorectal
+PW-0034,T6,2026-08-25T10:38:27Z,Treatment,,Marjatta W.,73,f,fi,Länsi-Uusimaa,colorectal
+PW-0035,T0,2026-10-10T19:58:53Z,Breast lump,flag,Helena B.,58,f,fi,Länsi-Uusimaa,breast
+PW-0035,coordinator,2026-10-10T19:58:53Z,Laura,,Helena B.,58,f,fi,Länsi-Uusimaa,breast
+PW-0035,T1,2026-10-13T01:01:13Z,Referral sent,,Helena B.,58,f,fi,Länsi-Uusimaa,breast
+PW-0035,T2,2026-10-16T05:36:42Z,Referral received,,Helena B.,58,f,fi,Länsi-Uusimaa,breast
+PW-0035,T3,2026-10-23T21:50:06Z,Recall imaging,,Helena B.,58,f,fi,Länsi-Uusimaa,breast
+PW-0035,T4,2026-10-27T18:48:12Z,Diagnosis,,Helena B.,58,f,fi,Länsi-Uusimaa,breast
+PW-0035,stage,2026-10-27T18:48:12Z,IV,,Helena B.,58,f,fi,Länsi-Uusimaa,breast
+PW-0035,T5,2026-10-31T23:53:54Z,MDT,,Helena B.,58,f,fi,Länsi-Uusimaa,breast
+PW-0035,T6,2026-11-11T04:32:51Z,Treatment,,Helena B.,58,f,fi,Länsi-Uusimaa,breast
+PW-0036,T0,2026-06-12T19:27:17Z,Raised PSA,flag,Mark J.,59,m,en,Länsi-Uusimaa,prostate
+PW-0036,T1,2026-08-11T17:51:56Z,Referral sent,,Mark J.,59,m,en,Länsi-Uusimaa,prostate
+PW-0036,T2,2026-08-16T19:22:45Z,Referral received,,Mark J.,59,m,en,Länsi-Uusimaa,prostate
+PW-0036,coordinator,2026-08-16T19:22:45Z,Aisha,,Mark J.,59,m,en,Länsi-Uusimaa,prostate
+PW-0036,T3,2026-08-28T02:17:01Z,MRI,,Mark J.,59,m,en,Länsi-Uusimaa,prostate
+PW-0036,T4,2026-09-04T12:20:10Z,Diagnosis,,Mark J.,59,m,en,Länsi-Uusimaa,prostate
+PW-0036,stage,2026-09-04T12:20:10Z,unknown,,Mark J.,59,m,en,Länsi-Uusimaa,prostate
+PW-0036,T5,2026-09-09T15:13:38Z,MDT,,Mark J.,59,m,en,Länsi-Uusimaa,prostate
+PW-0036,T6,2026-10-05T14:29:08Z,Treatment,,Mark J.,59,m,en,Länsi-Uusimaa,prostate
+PW-0037,T0,2026-09-06T00:55:06Z,Abnormal mammogram,flag,Helena S.,50,f,fi,Länsi-Uusimaa,breast
+PW-0037,T1,2026-09-19T00:27:29Z,Referral sent,,Helena S.,50,f,fi,Länsi-Uusimaa,breast
+PW-0037,T2,2026-09-22T13:20:39Z,Referral received,,Helena S.,50,f,fi,Länsi-Uusimaa,breast
+PW-0037,coordinator,2026-09-22T13:20:39Z,Laura,,Helena S.,50,f,fi,Länsi-Uusimaa,breast
+PW-0037,T3,2026-10-01T12:01:13Z,Recall imaging,,Helena S.,50,f,fi,Länsi-Uusimaa,breast
+PW-0037,T4,2026-10-10T21:06:01Z,Diagnosis,,Helena S.,50,f,fi,Länsi-Uusimaa,breast
+PW-0037,stage,2026-10-10T21:06:01Z,II,,Helena S.,50,f,fi,Länsi-Uusimaa,breast
+PW-0037,T5,2026-10-16T15:49:13Z,MDT,,Helena S.,50,f,fi,Länsi-Uusimaa,breast
+PW-0037,T6,2026-11-01T00:24:19Z,Treatment,,Helena S.,50,f,fi,Länsi-Uusimaa,breast
+PW-0038,T0,2026-09-04T14:49:03Z,Cough over 3 weeks,flag,Matti N.,65,m,fi,Länsi-Uusimaa,lung
+PW-0038,g8,2026-09-04T14:49:03Z,15,score,Matti N.,65,m,fi,Länsi-Uusimaa,lung
+PW-0038,T1,2026-09-29T16:51:48Z,Referral sent,,Matti N.,65,m,fi,Länsi-Uusimaa,lung
+PW-0038,T2,2026-10-02T09:12:16Z,Referral received,,Matti N.,65,m,fi,Länsi-Uusimaa,lung
+PW-0038,coordinator,2026-10-02T09:12:16Z,Mikko,,Matti N.,65,m,fi,Länsi-Uusimaa,lung
+PW-0038,T3,2026-10-23T12:48:25Z,CT scan,,Matti N.,65,m,fi,Länsi-Uusimaa,lung
+PW-0039,T0,2026-10-27T23:46:00Z,Positive FIT,flag,Liisa W.,63,f,fi,Länsi-Uusimaa,colorectal
+PW-0039,coordinator,2026-10-27T23:46:00Z,Laura,,Liisa W.,63,f,fi,Länsi-Uusimaa,colorectal
+PW-0039,T1,2026-11-04T14:27:43Z,Referral sent,,Liisa W.,63,f,fi,Länsi-Uusimaa,colorectal
+PW-0039,T2,2026-11-05T23:35:39Z,Referral received,,Liisa W.,63,f,fi,Länsi-Uusimaa,colorectal
+PW-0040,T0,2026-09-10T02:30:31Z,Raised PSA,flag,Pekka V.,68,m,fi,Länsi-Uusimaa,prostate
+PW-0040,g8,2026-09-10T02:30:31Z,12,score,Pekka V.,68,m,fi,Länsi-Uusimaa,prostate
+PW-0040,T1,2026-09-23T20:06:07Z,Referral sent,,Pekka V.,68,m,fi,Länsi-Uusimaa,prostate
+PW-0040,T2,2026-09-27T17:38:59Z,Referral received,,Pekka V.,68,m,fi,Länsi-Uusimaa,prostate
+PW-0040,coordinator,2026-09-27T17:38:59Z,Laura,,Pekka V.,68,m,fi,Länsi-Uusimaa,prostate
+PW-0040,T3,2026-10-19T21:34:51Z,MRI,,Pekka V.,68,m,fi,Länsi-Uusimaa,prostate
+PW-0040,T4,2026-10-26T14:09:24Z,Diagnosis,,Pekka V.,68,m,fi,Länsi-Uusimaa,prostate
+PW-0040,stage,2026-10-26T14:09:24Z,II,,Pekka V.,68,m,fi,Länsi-Uusimaa,prostate
+PW-0040,T5,2026-11-02T09:52:44Z,MDT,,Pekka V.,68,m,fi,Länsi-Uusimaa,prostate
+PW-0041,T0,2026-07-27T05:24:47Z,Breast lump,flag,Marjatta T.,46,f,fi,Länsi-Uusimaa,breast
+PW-0041,T1,2026-08-03T17:26:08Z,Referral sent,,Marjatta T.,46,f,fi,Länsi-Uusimaa,breast
+PW-0041,T2,2026-08-12T19:52:01Z,Referral received,,Marjatta T.,46,f,fi,Länsi-Uusimaa,breast
+PW-0041,coordinator,2026-08-12T19:52:01Z,Mikko,,Marjatta T.,46,f,fi,Länsi-Uusimaa,breast
+PW-0041,T3,2026-08-18T21:29:48Z,Recall imaging,,Marjatta T.,46,f,fi,Länsi-Uusimaa,breast
+PW-0041,T4,2026-08-28T20:06:17Z,Diagnosis,,Marjatta T.,46,f,fi,Länsi-Uusimaa,breast
+PW-0041,stage,2026-08-28T20:06:17Z,unknown,,Marjatta T.,46,f,fi,Länsi-Uusimaa,breast
+PW-0041,T5,2026-09-08T07:32:42Z,MDT,,Marjatta T.,46,f,fi,Länsi-Uusimaa,breast
+PW-0041,T6,2026-09-19T21:59:08Z,Treatment,,Marjatta T.,46,f,fi,Länsi-Uusimaa,breast
+PW-0042,T0,2026-11-03T01:22:26Z,Abnormal blood count,flag,Lars V.,83,m,sv,Länsi-Uusimaa,haematological
+PW-0042,g8,2026-11-03T01:22:26Z,11,score,Lars V.,83,m,sv,Länsi-Uusimaa,haematological
+PW-0042,coordinator,2026-11-03T01:22:26Z,Mikko,,Lars V.,83,m,sv,Länsi-Uusimaa,haematological
+PW-0043,T0,2026-11-06T18:43:58Z,Abnormal mammogram,flag,Marjatta E.,64,f,fi,Länsi-Uusimaa,breast
+PW-0043,coordinator,2026-11-06T18:43:58Z,Aisha,,Marjatta E.,64,f,fi,Länsi-Uusimaa,breast
+PW-0044,T0,2026-09-26T03:42:18Z,Abnormal blood count,flag,Helena R.,64,f,fi,Länsi-Uusimaa,haematological
+PW-0044,coordinator,2026-09-26T03:42:18Z,Mikko,,Helena R.,64,f,fi,Länsi-Uusimaa,haematological
+PW-0044,T1,2026-10-18T09:52:28Z,Referral sent,,Helena R.,64,f,fi,Länsi-Uusimaa,haematological
+PW-0045,T0,2026-11-11T05:02:41Z,Rectal bleeding,flag,Matti A.,64,m,fi,Länsi-Uusimaa,colorectal
+PW-0045,coordinator,2026-11-11T05:02:41Z,Mikko,,Matti A.,64,m,fi,Länsi-Uusimaa,colorectal
+PW-0046,T0,2026-08-01T06:21:56Z,Weight loss,flag,Juha V.,76,m,fi,Länsi-Uusimaa,lung
+PW-0046,g8,2026-08-01T06:21:56Z,14,score,Juha V.,76,m,fi,Länsi-Uusimaa,lung
+PW-0046,T1,2026-10-06T17:16:21Z,Referral sent,,Juha V.,76,m,fi,Länsi-Uusimaa,lung
+PW-0046,T2,2026-11-05T21:30:32Z,Referral received,,Juha V.,76,m,fi,Länsi-Uusimaa,lung
+PW-0046,coordinator,2026-11-05T21:30:32Z,Laura,,Juha V.,76,m,fi,Länsi-Uusimaa,lung
+PW-0047,T0,2026-09-10T07:16:45Z,"Back or bone pain, 3rd visit",flag,Helena H.,66,f,fi,Länsi-Uusimaa,haematological
+PW-0047,g8,2026-09-10T07:16:45Z,10,score,Helena H.,66,f,fi,Länsi-Uusimaa,haematological
+PW-0048,T0,2026-07-02T21:19:23Z,Nodule on X-ray or CT,flag,Ahmed A.,60,m,ar,Länsi-Uusimaa,lung
+PW-0048,T1,2026-07-30T15:31:17Z,Referral sent,,Ahmed A.,60,m,ar,Länsi-Uusimaa,lung
+PW-0048,T2,2026-08-04T13:02:04Z,Referral received,,Ahmed A.,60,m,ar,Länsi-Uusimaa,lung
+PW-0048,coordinator,2026-08-04T13:02:04Z,Aisha,,Ahmed A.,60,m,ar,Länsi-Uusimaa,lung
+PW-0048,T3,2026-09-30T07:16:32Z,CT scan,,Ahmed A.,60,m,ar,Länsi-Uusimaa,lung
+PW-0048,T4,2026-10-09T00:19:53Z,Diagnosis,,Ahmed A.,60,m,ar,Länsi-Uusimaa,lung
+PW-0048,stage,2026-10-09T00:19:53Z,IV,,Ahmed A.,60,m,ar,Länsi-Uusimaa,lung
+PW-0048,T5,2026-10-25T19:58:59Z,MDT,,Ahmed A.,60,m,ar,Länsi-Uusimaa,lung
+PW-0048,T6,2026-11-08T16:56:52Z,Treatment,,Ahmed A.,60,m,ar,Länsi-Uusimaa,lung
+PW-0049,T0,2026-10-15T04:18:08Z,Breast lump,flag,Marjatta M.,46,f,fi,Länsi-Uusimaa,breast
+PW-0049,coordinator,2026-10-15T04:18:08Z,Laura,,Marjatta M.,46,f,fi,Länsi-Uusimaa,breast
+PW-0049,T1,2026-10-21T12:03:06Z,Referral sent,,Marjatta M.,46,f,fi,Länsi-Uusimaa,breast
+PW-0049,T2,2026-10-25T15:30:30Z,Referral received,,Marjatta M.,46,f,fi,Länsi-Uusimaa,breast
+PW-0049,T3,2026-11-01T14:51:34Z,Recall imaging,,Marjatta M.,46,f,fi,Länsi-Uusimaa,breast
+PW-0049,T4,2026-11-06T04:36:44Z,Diagnosis,,Marjatta M.,46,f,fi,Länsi-Uusimaa,breast
+PW-0049,stage,2026-11-06T04:36:44Z,unknown,,Marjatta M.,46,f,fi,Länsi-Uusimaa,breast
+PW-0049,T5,2026-11-09T19:55:39Z,MDT,,Marjatta M.,46,f,fi,Länsi-Uusimaa,breast
+PW-0050,T0,2026-06-13T02:37:16Z,Breast lump,flag,Tuula A.,52,f,fi,Länsi-Uusimaa,breast
+PW-0050,T1,2026-06-28T11:19:21Z,Referral sent,,Tuula A.,52,f,fi,Länsi-Uusimaa,breast
+PW-0050,T2,2026-07-02T15:43:22Z,Referral received,,Tuula A.,52,f,fi,Länsi-Uusimaa,breast
+PW-0050,coordinator,2026-07-02T15:43:22Z,Mikko,,Tuula A.,52,f,fi,Länsi-Uusimaa,breast
+PW-0050,T3,2026-07-08T12:54:47Z,Recall imaging,,Tuula A.,52,f,fi,Länsi-Uusimaa,breast
+PW-0050,T4,2026-07-12T20:18:41Z,Diagnosis,,Tuula A.,52,f,fi,Länsi-Uusimaa,breast
+PW-0050,stage,2026-07-12T20:18:41Z,unknown,,Tuula A.,52,f,fi,Länsi-Uusimaa,breast
+PW-0050,T5,2026-07-21T01:46:18Z,MDT,,Tuula A.,52,f,fi,Länsi-Uusimaa,breast
+PW-0050,T6,2026-08-05T03:30:50Z,Treatment,,Tuula A.,52,f,fi,Länsi-Uusimaa,breast
+PW-0051,T0,2026-10-05T04:33:11Z,Nodule on X-ray or CT,flag,Kari R.,71,m,fi,Länsi-Uusimaa,lung
+PW-0051,g8,2026-10-05T04:33:11Z,11,score,Kari R.,71,m,fi,Länsi-Uusimaa,lung
+PW-0051,coordinator,2026-10-05T04:33:11Z,Laura,,Kari R.,71,m,fi,Länsi-Uusimaa,lung
+PW-0052,T0,2026-09-26T06:36:30Z,Raised PSA,flag,Matti A.,67,m,fi,Länsi-Uusimaa,prostate
+PW-0052,g8,2026-09-26T06:36:30Z,12,score,Matti A.,67,m,fi,Länsi-Uusimaa,prostate
+PW-0052,coordinator,2026-09-26T06:36:30Z,Mikko,,Matti A.,67,m,fi,Länsi-Uusimaa,prostate
+PW-0052,T1,2026-10-06T05:56:26Z,Referral sent,,Matti A.,67,m,fi,Länsi-Uusimaa,prostate
+PW-0052,T2,2026-10-11T10:20:06Z,Referral received,,Matti A.,67,m,fi,Länsi-Uusimaa,prostate
+PW-0052,T3,2026-10-28T13:32:56Z,MRI,,Matti A.,67,m,fi,Länsi-Uusimaa,prostate
+PW-0052,T4,2026-11-07T21:44:40Z,Diagnosis,,Matti A.,67,m,fi,Länsi-Uusimaa,prostate
+PW-0052,stage,2026-11-07T21:44:40Z,unknown,,Matti A.,67,m,fi,Länsi-Uusimaa,prostate
+PW-0052,T5,2026-11-14T00:47:18Z,MDT,,Matti A.,67,m,fi,Länsi-Uusimaa,prostate
+PW-0053,T0,2026-08-03T09:04:49Z,Positive FIT,flag,Hassan E.,71,m,ar,Länsi-Uusimaa,colorectal
+PW-0053,g8,2026-08-03T09:04:49Z,17,score,Hassan E.,71,m,ar,Länsi-Uusimaa,colorectal
+PW-0053,T1,2026-08-30T03:01:06Z,Referral sent,,Hassan E.,71,m,ar,Länsi-Uusimaa,colorectal
+PW-0053,T2,2026-09-01T12:47:26Z,Referral received,,Hassan E.,71,m,ar,Länsi-Uusimaa,colorectal
+PW-0053,coordinator,2026-09-01T12:47:26Z,Mikko,,Hassan E.,71,m,ar,Länsi-Uusimaa,colorectal
+PW-0053,T3,2026-10-16T11:44:44Z,Colonoscopy,,Hassan E.,71,m,ar,Länsi-Uusimaa,colorectal
+PW-0053,T4,2026-10-26T07:05:15Z,Diagnosis,,Hassan E.,71,m,ar,Länsi-Uusimaa,colorectal
+PW-0053,stage,2026-10-26T07:05:15Z,unknown,,Hassan E.,71,m,ar,Länsi-Uusimaa,colorectal
+PW-0053,T5,2026-11-01T01:05:37Z,MDT,,Hassan E.,71,m,ar,Länsi-Uusimaa,colorectal
+PW-0054,T0,2026-08-22T08:56:52Z,Raised PSA,flag,Bo W.,59,m,sv,Länsi-Uusimaa,prostate
+PW-0054,T1,2026-09-04T21:47:33Z,Referral sent,,Bo W.,59,m,sv,Länsi-Uusimaa,prostate
+PW-0054,T2,2026-09-08T09:17:46Z,Referral received,,Bo W.,59,m,sv,Länsi-Uusimaa,prostate
+PW-0054,coordinator,2026-09-08T09:17:46Z,Aisha,,Bo W.,59,m,sv,Länsi-Uusimaa,prostate
+PW-0054,T3,2026-09-14T19:07:49Z,MRI,,Bo W.,59,m,sv,Länsi-Uusimaa,prostate
+PW-0054,T4,2026-09-21T01:58:31Z,Diagnosis,,Bo W.,59,m,sv,Länsi-Uusimaa,prostate
+PW-0054,stage,2026-09-21T01:58:31Z,unknown,,Bo W.,59,m,sv,Länsi-Uusimaa,prostate
+PW-0054,T5,2026-09-27T13:06:25Z,MDT,,Bo W.,59,m,sv,Länsi-Uusimaa,prostate
+PW-0054,T6,2026-10-14T20:14:01Z,Treatment,,Bo W.,59,m,sv,Länsi-Uusimaa,prostate
+PW-0055,T0,2026-08-04T08:21:22Z,Urinary symptoms,flag,Mohamed A.,57,m,so,Länsi-Uusimaa,prostate
+PW-0055,T1,2026-08-21T11:55:57Z,Referral sent,,Mohamed A.,57,m,so,Länsi-Uusimaa,prostate
+PW-0055,T2,2026-08-25T15:24:31Z,Referral received,,Mohamed A.,57,m,so,Länsi-Uusimaa,prostate
+PW-0055,coordinator,2026-08-25T15:24:31Z,Laura,,Mohamed A.,57,m,so,Länsi-Uusimaa,prostate
+PW-0055,T3,2026-09-16T17:05:14Z,MRI,,Mohamed A.,57,m,so,Länsi-Uusimaa,prostate
+PW-0055,T4,2026-09-22T08:08:19Z,Diagnosis,,Mohamed A.,57,m,so,Länsi-Uusimaa,prostate
+PW-0055,stage,2026-09-22T08:08:19Z,unknown,,Mohamed A.,57,m,so,Länsi-Uusimaa,prostate
+PW-0055,T5,2026-09-29T04:28:46Z,MDT,,Mohamed A.,57,m,so,Länsi-Uusimaa,prostate
+PW-0055,T6,2026-10-08T19:53:38Z,Treatment,,Mohamed A.,57,m,so,Länsi-Uusimaa,prostate
+PW-0056,T0,2026-08-27T20:27:31Z,Breast lump,flag,Sari N.,65,f,fi,Länsi-Uusimaa,breast
+PW-0056,g8,2026-08-27T20:27:31Z,11,score,Sari N.,65,f,fi,Länsi-Uusimaa,breast
+PW-0056,T1,2026-09-08T16:01:13Z,Referral sent,,Sari N.,65,f,fi,Länsi-Uusimaa,breast
+PW-0056,T2,2026-09-11T18:19:19Z,Referral received,,Sari N.,65,f,fi,Länsi-Uusimaa,breast
+PW-0056,coordinator,2026-09-11T18:19:19Z,Mikko,,Sari N.,65,f,fi,Länsi-Uusimaa,breast
+PW-0056,T3,2026-09-19T02:09:06Z,Recall imaging,,Sari N.,65,f,fi,Länsi-Uusimaa,breast
+PW-0056,T4,2026-10-02T10:10:56Z,Diagnosis,,Sari N.,65,f,fi,Länsi-Uusimaa,breast
+PW-0056,stage,2026-10-02T10:10:56Z,I,,Sari N.,65,f,fi,Länsi-Uusimaa,breast
+PW-0056,T5,2026-10-05T20:29:37Z,MDT,,Sari N.,65,f,fi,Länsi-Uusimaa,breast
+PW-0056,T6,2026-10-15T08:16:16Z,Treatment,,Sari N.,65,f,fi,Länsi-Uusimaa,breast
+PW-0057,T0,2026-07-02T02:45:35Z,Positive FIT,flag,Liisa J.,71,f,fi,Länsi-Uusimaa,colorectal
+PW-0057,g8,2026-07-02T02:45:35Z,9,score,Liisa J.,71,f,fi,Länsi-Uusimaa,colorectal
+PW-0057,T1,2026-07-09T22:00:45Z,Referral sent,,Liisa J.,71,f,fi,Länsi-Uusimaa,colorectal
+PW-0057,T2,2026-07-13T13:27:47Z,Referral received,,Liisa J.,71,f,fi,Länsi-Uusimaa,colorectal
+PW-0057,coordinator,2026-07-13T13:27:47Z,Aisha,,Liisa J.,71,f,fi,Länsi-Uusimaa,colorectal
+PW-0057,T3,2026-08-31T19:02:07Z,Colonoscopy,,Liisa J.,71,f,fi,Länsi-Uusimaa,colorectal
+PW-0057,T4,2026-09-05T00:03:18Z,Diagnosis,,Liisa J.,71,f,fi,Länsi-Uusimaa,colorectal
+PW-0057,stage,2026-09-05T00:03:18Z,unknown,,Liisa J.,71,f,fi,Länsi-Uusimaa,colorectal
+PW-0057,T5,2026-09-24T21:31:47Z,MDT,,Liisa J.,71,f,fi,Länsi-Uusimaa,colorectal
+PW-0057,T6,2026-10-11T19:34:49Z,Treatment,,Liisa J.,71,f,fi,Länsi-Uusimaa,colorectal
+PW-0058,T0,2026-08-29T11:42:10Z,Weight loss,flag,Anders L.,82,m,sv,Länsi-Uusimaa,lung
+PW-0058,g8,2026-08-29T11:42:10Z,9,score,Anders L.,82,m,sv,Länsi-Uusimaa,lung
+PW-0058,T1,2026-10-12T23:25:41Z,Referral sent,,Anders L.,82,m,sv,Länsi-Uusimaa,lung
+PW-0058,T2,2026-10-14T17:11:13Z,Referral received,,Anders L.,82,m,sv,Länsi-Uusimaa,lung
+PW-0058,coordinator,2026-10-14T17:11:13Z,Laura,,Anders L.,82,m,sv,Länsi-Uusimaa,lung
+PW-0059,T0,2026-10-04T06:34:10Z,Rectal bleeding,flag,Eva K.,60,f,sv,Länsi-Uusimaa,colorectal
+PW-0059,coordinator,2026-10-04T06:34:10Z,Mikko,,Eva K.,60,f,sv,Länsi-Uusimaa,colorectal
+PW-0059,T1,2026-10-07T23:45:00Z,Referral sent,,Eva K.,60,f,sv,Länsi-Uusimaa,colorectal
+PW-0059,T2,2026-10-09T12:56:05Z,Referral received,,Eva K.,60,f,sv,Länsi-Uusimaa,colorectal
+PW-0059,T3,2026-10-24T10:44:20Z,Colonoscopy,,Eva K.,60,f,sv,Länsi-Uusimaa,colorectal
+PW-0059,T4,2026-11-03T21:53:02Z,Diagnosis,,Eva K.,60,f,sv,Länsi-Uusimaa,colorectal
+PW-0059,stage,2026-11-03T21:53:02Z,IV,,Eva K.,60,f,sv,Länsi-Uusimaa,colorectal
+PW-0059,T5,2026-11-09T13:35:56Z,MDT,,Eva K.,60,f,sv,Länsi-Uusimaa,colorectal
+PW-0060,T0,2026-10-28T19:50:27Z,Positive FIT,flag,Riitta R.,64,f,fi,Länsi-Uusimaa,colorectal
+PW-0060,coordinator,2026-10-28T19:50:27Z,Mikko,,Riitta R.,64,f,fi,Länsi-Uusimaa,colorectal
+PW-0060,T1,2026-11-05T23:55:13Z,Referral sent,,Riitta R.,64,f,fi,Länsi-Uusimaa,colorectal
+PW-0060,T2,2026-11-08T14:47:21Z,Referral received,,Riitta R.,64,f,fi,Länsi-Uusimaa,colorectal
