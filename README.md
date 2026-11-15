@@ -9,7 +9,7 @@ Built for Junction 2026, AstraZeneca challenge **Equal Care Across Finland**.
 | | |
 |---|---|
 | Live demo | https://majormask--hoitovirta-web.us-east.modal.run (no login) |
-| Video | `<add the unlisted video link>` |
+| Video | https://youtu.be/wNoiuXIck-0 |
 | Source code | https://github.com/MajorMask/hoitovirta |
 | Slides | [`docs/hoitovirta-deck.pdf`](docs/hoitovirta-deck.pdf) |
 | Every number and its source | [`docs/EVIDENCE.md`](docs/EVIDENCE.md) |
