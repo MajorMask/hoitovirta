@@ -8,7 +8,7 @@ import subprocess
 import modal
 
 IGNORE = [".env", "*.env", "**/.env", "__pycache__", "**/__pycache__", ".venv", ".venv/**", "**/.venv/**", ".git", "sources",
-          "archive", "**/*.db", "**/*.db-wal", "**/*.db-shm", "tracker", "docs"]
+          "archive", "submission", "demo-video", "**/*.db", "**/*.db-wal", "**/*.db-shm", "tracker", "docs"]
 
 image = (modal.Image.debian_slim(python_version="3.11")
          .pip_install_from_requirements("requirements.txt")

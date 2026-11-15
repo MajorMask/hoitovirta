@@ -1120,8 +1120,14 @@ async def ingest_fhir_bundle(bundle: dict):
 
 # ---- web ------------------------------------------------------------------------------------------------------------
 @app.get("/")
+def home():
+    return FileResponse(ROOT / "web" / "home.html")      # the front page
+
+
+@app.get("/app")
+@app.get("/app/")
 def index():
-    return FileResponse(ROOT / "web" / "index.html")
+    return FileResponse(ROOT / "web" / "index.html")     # the role-based app (old links like /#/today are forwarded here by the front page)
 
 
 # The Pulse check-in survey sidecar (mock, in memory, DEMO ids only) is mounted under its own path: it shares nothing with the event store above.

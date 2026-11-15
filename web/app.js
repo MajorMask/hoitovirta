@@ -77,7 +77,7 @@ function renderHeader(active) {
     h('select', { 'aria-label': t('act_as'), onchange: e => { const p = PERSONAS.find(x => x.id === e.target.value) || PERSONAS[0]; ls.set('persona', p.id); const h2 = withAs(homeOf(p), p); if (location.hash === h2) route(); else location.hash = h2; } },
       PERSONAS.map(p => h('option', { value: p.id, selected: p.id === persona().id }, personaLabel(p)))));
   hdr.append(h('div', { class: 'hdr-top' },
-    h('a', { class: 'brand', href: '#/fast-track', 'aria-label': 'Hoitovirta' }, h('img', { src: '/logo.svg', alt: '', width: '32', height: '32' }), 'Hoitovirta'),
+    h('a', { class: 'brand', href: '/', 'aria-label': 'Hoitovirta, front page' }, h('img', { src: '/logo.svg', alt: '', width: '32', height: '32' }), 'Hoitovirta'),
     h('div', { class: 'right' }, h('span', { id: 'status', role: 'status', 'aria-live': 'polite' }), actAs, langs, expertBtn, h('span', { id: 'notes-slot' }))), nav);
   pollStatus();
 }
